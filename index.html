@@ -8,11 +8,11 @@
     <!-- Tailwind Link -->
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"  />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    
     <!-- Font Awesome link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <!-- slider -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
@@ -56,12 +56,15 @@
                 />
               <div class="sm:ml-6 sm:block">
                 <div class="flex items-center space-x-4">
-                  <a href="#" aria-current="page"><button  data-bs-toggle="modal" data-bs-target="#exampleModalLg"
+                  <a href="#" aria-current="page"><button data-te-toggle="modal"
+                      data-te-target="#exampleModalLg"
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
                       class="bg-orange-500 py-1.5 px-6 text-white rounded-full
                       hover:bg-white hover:text-black text-lg tracking-wide">
                       Register Your Brand
                     </button></a>
-                  <a href="#" aria-current="page"><button
+                  <a href="live.html" aria-current="page"><button
                       class="font-bold border border-gray-500 rounded-full py-2
                       pr-12 pl-5 text-white rounded-full hover:bg-white
                       hover:text-red-500 mr-5 text-left">
@@ -97,12 +100,24 @@
 
 
 <!-- Modal -->
-<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
-  <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
-    <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-2xl outline-none text-current">
-      <div class="modal-body relative p-7 mx-3 pb-12">
+<div
+  data-te-modal-init
+  class="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+  id="exampleModalLg"
+  tabindex="-1"
+  aria-labelledby="exampleModalLgLabel"
+  aria-modal="true"
+  role="dialog">
+  <div
+    data-te-modal-dialog-ref
+    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px]">
+    <div
+      class="pointer-events-auto relative flex w-full flex-col rounded-lg border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+      <div
+        class="flex flex-shrink-0 items-center justify-between rounded-lg border-b-2 border-neutral-100 border-opacity-100  dark:border-opacity-50">
+      <div class=" relative p-7 mx-3 pb-12">
         <p class="text-gray-400 text-center px-12">To measure your Digital-Ranking | Digital Score | Share of Voice | Competition Analysis | Digital media monitoring</p>
-        <button class="text-white bg-gray-200 text-lg rounded-full h-8 w-8 absolute top-[5px] right-[-8px]" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+        <button class="text-white bg-gray-200 text-lg rounded-full h-8 w-8 absolute top-[5px] right-[-8px]" data-te-modal-dismiss aria-label="Close"><i class="fas fa-times"></i></button>
         <div class="mt-8">
           <form action="">
             <div class="grid grid-cols-2 gap-6">
@@ -213,54 +228,66 @@
     <!-- Hero section -->
 
     <div
-      id="carouselExampleSlidesOnly"
-      class="carousel slide relative"
-      data-bs-ride="carousel">
-      <div class="carousel-inner relative w-full overflow-hidden">
-        <div class="carousel-item active relative float-left w-full max-h-[592px]">
-          <img
-            src="/images/s1.jpg"
-            class="block w-full opacity-60 "
-            alt="Wild Landscape"
-            />
-          <div class="carousel-caption absolute text-center mx-[14%]">
-            <h1
-              class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
-              More engaging content, more engaged followers
-            </h1>
-            <p class="font-light my-3 text-lg tracking-wide">
-              Something helpful, inspiring, or entertaining. Engaging content
-              gives your reader a peek at something he/she hasn't seen before
-              but can relate to in some way
-            </p>
-          </div>
+    id="carouselExampleCaptions"
+    class="relative"
+    data-te-carousel-init
+    data-te-carousel-slide>
+    
+    <div
+      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+      <div
+        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-active
+        data-te-carousel-item
+        style="backface-visibility: hidden">
+        <img src="/images/s1.jpg" class="block w-full opacity-60 " alt="Wild Landscape"/>
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block lg:mx-56">
+          <h1
+          class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
+          More engaging content, more engaged followers
+        </h1>
+        <p class="font-light my-3 text-lg tracking-wide">
+          Something helpful, inspiring, or entertaining. Engaging content
+          gives your reader a peek at something he/she hasn't seen before
+          but can relate to in some way
+        </p>
         </div>
-        <div class="carousel-item relative float-left w-full max-h-[592px]" >
-          <img
+      </div>
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        style="backface-visibility: hidden">
+        <img
             src="/images/s2.jpg"
             class="block w-full opacity-60 "
             alt="Camera"
             />
-          <div class="carousel-caption absolute text-center mx-[14%]">
-            <h1
-              class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
-              Check Online Reputation
-            </h1>
-            <p class="font-light my-3 text-lg tracking-wide">
-              Manage your brand's negative information from search results.
-              Repair negative links. Manage your brand visibility with our
-              effective ORM services.
-            </p>
-          </div>
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block lg:mx-56">
+          <h1
+          class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
+          Check Online Reputation
+        </h1>
+        <p class="font-light my-3 text-lg tracking-wide">
+          Manage your brand's negative information from search results.
+          Repair negative links. Manage your brand visibility with our
+          effective ORM services.
+        </p>
         </div>
-        <div class="carousel-item relative float-left w-full max-h-[592px]">
-          <img
+      </div>
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        style="backface-visibility: hidden">
+        <img
             src="/images/s3.jpg"
             class="block w-full opacity-60 "
             alt="Exotic Fruits"
             />
-          <div class="carousel-caption absolute text-center mx-[14%]">
-            <h1
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block lg:mx-56">
+          <h1
               class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
               Check Your Digital Rank and Score
             </h1>
@@ -269,27 +296,27 @@
               Index with others. We use Artificial Intelligence to measure your
               brand impact
             </p>
-          </div>
         </div>
       </div>
     </div>
+   
+  </div>
 
     <!-- Tabs section -->
 
     <div class="container mx-auto py-3">
       <ul
-        class="nav space-x-4 nav-tabs flex justify-center flex-wrap list-none
+        class="space-x-4 nav-tabs flex justify-center flex-wrap list-none
         border-b-0 pl-0 mb-4"
-        id="tabs-tab"
-        role="tablist">
-        <li class="nav-item" role="presentation">
+        role="tablist" data-te-nav-ref>
+        <li role="presentation">
           <a
             href="#tabs-top100"
-            class="nav-link block p-4 text-white hover:border-b-2 
-            border-orange-600 rounded-t-lg "
+            class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-orange-500 hover:bg-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-orange-500 data-[te-nav-active]:text-orange-500 dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
             id="tabs-top100-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-top100"
+            data-te-toggle="pill"
+            data-te-nav-active
+            data-te-target="#tabs-top100"
             role="tab"
             aria-controls="tabs-top100"
             aria-selected="true"><img
@@ -298,14 +325,13 @@
               />
             <span class="text-white tracking-wide">Top 100</span></a>
         </li>
-        <li class="nav-item" role="presentation">
+        <li  role="presentation">
           <a
             href="#tabs-actors"
-            class="nav-link inline-block p-4 text-white hover:border-b-2
-            border-orange-600 rounded-t-lg"
+            class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-orange-500 hover:bg-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-orange-500 data-[te-nav-active]:text-orange-500 dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
             id="tabs-actors-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-actors"
+            data-te-toggle="pill"
+            data-te-target="#tabs-actors"
             role="tab"
             aria-controls="tabs-actors"
             aria-selected="false"><img
@@ -315,14 +341,13 @@
               />
             <span class="text-white tracking-wide">Actors</span></a>
         </li>
-        <li class="nav-item" role="presentation">
+        <li role="presentation">
           <a
             href="#tabs-ceo"
-            class="nav-link inline-block p-4 text-white hover:border-b-2
-            border-orange-600 rounded-t-lg"
+            class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-orange-500 hover:bg-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-orange-500 data-[te-nav-active]:text-orange-500 dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
             id="tabs-ceo-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-ceo"
+            data-te-toggle="pill"
+            data-te-target="#tabs-ceo"
             role="tab"
             aria-controls="tabs-ceo"
             aria-selected="false"><img
@@ -332,14 +357,13 @@
               />
             <span class="text-white tracking-wide">CEO</span></a>
         </li>
-        <li class="nav-item" role="presentation">
+        <li role="presentation">
           <a
             href="#tabs-company"
-            class="nav-link inline-block p-4 text-white hover:border-b-2
-            border-orange-600 rounded-t-lg"
+            class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-orange-500 hover:bg-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-orange-500 data-[te-nav-active]:text-orange-500 dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
             id="tabs-company-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-company"
+            data-te-toggle="pill"
+            data-te-target="#tabs-company"
             role="tab"
             aria-controls="tabs-company"
             aria-selected="false"><img
@@ -349,14 +373,13 @@
               />
             <span class="text-white tracking-wide">Company</span></a>
         </li>
-        <li class="nav-item" role="presentation">
+        <li role="presentation">
           <a
             href="#tabs-cricketers"
-            class="nav-link inline-block p-4 text-white hover:border-b-2
-            border-orange-600 rounded-t-lg"
+            class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-orange-500 hover:bg-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-orange-500 data-[te-nav-active]:text-orange-500 dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
             id="tabs-cricketers-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-cricketers"
+            data-te-toggle="pill"
+            data-te-target="#tabs-cricketers"
             role="tab"
             aria-controls="tabs-cricketers"
             aria-selected="false"><img
@@ -366,14 +389,13 @@
               />
             <span class="text-white tracking-wide">Cricketers</span></a>
         </li>
-        <li class="nav-item" role="presentation">
+        <li role="presentation">
           <a
             href="#tabs-influencers"
-            class="nav-link inline-block p-4 text-white hover:border-b-2
-            border-orange-600 rounded-t-lg"
+            class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-orange-500 hover:bg-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-orange-500 data-[te-nav-active]:text-orange-500 dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
             id="tabs-influencers-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-influencers"
+            data-te-toggle="pill"
+            data-te-target="#tabs-influencers"
             role="tab"
             aria-controls="tabs-influencers"
             aria-selected="false"><img
@@ -383,14 +405,13 @@
               />
             <span class="text-white tracking-wide">Influencers</span></a>
         </li>
-        <li class="nav-item" role="presentation">
+        <li  role="presentation">
           <a
             href="#tabs-ministries"
-            class="nav-link inline-block p-4 text-white hover:border-b-2
-            border-orange-600 rounded-t-lg"
+            class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-orange-500 hover:bg-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-orange-500 data-[te-nav-active]:text-orange-500 dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
             id="tabs-ministries-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-ministries"
+            data-te-toggle="pill"
+            data-te-target="#tabs-ministries"
             role="tab"
             aria-controls="tabs-ministries"
             aria-selected="false"><img
@@ -400,14 +421,13 @@
               />
             <span class="text-white tracking-wide">Ministries</span></a>
         </li>
-        <li class="nav-item" role="presentation">
+        <li  role="presentation">
           <a
             href="#tabs-politicians"
-            class="nav-link inline-block p-4 text-white hover:border-b-2
-            border-orange-600 rounded-t-lg"
+            class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-orange-500  focus:isolate hover:text-orange-500 focus:border-transparent data-[te-nav-active]:border-orange-500 data-[te-nav-active]:text-orange-500 dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
             id="tabs-politicians-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#tabs-politicians"
+            data-te-toggle="pill"
+            data-te-target="#tabs-politicians"
             role="tab"
             aria-controls="tabs-politicians"
             aria-selected="false"><img
@@ -415,7 +435,7 @@
               alt=""
               class="mx-auto"
               />
-            <span class="text-white tracking-wide">Politicians</span></a>
+            <span class="text-white tracking-wide ">Politicians</span></a>
         </li>
       </ul>
     </div>
@@ -451,8 +471,8 @@
 
     <!-- Card Section -->
 
-    <div class="tab-content" id="tabs-tabContent">
-  <div class="tab-pane fade show active" id="tabs-top100" role="tabpanel" aria-labelledby="tabs-top100-tab">
+    <div >
+  <div class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-top100" role="tabpanel" aria-labelledby="tabs-top100-tab" data-te-tab-active>
     <div class="container mx-auto pt-5">
       <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
         <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-bs-trigger="hover focus" data-popover-offset="25">
@@ -762,7 +782,7 @@
       </div>
     </div>
   </div>
-  <div class="tab-pane fade" id="tabs-actors" role="tabpanel" aria-labelledby="tabs-actors-tab">
+  <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-actors" role="tabpanel" aria-labelledby="tabs-actors-tab">
     <div class="container mx-auto pt-5">
       <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
         <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
@@ -883,7 +903,7 @@
     </div>
   </div>
 
-  <div class="tab-pane fade" id="tabs-ceo" role="tabpanel" aria-labelledby="tabs-ceo-tab">
+  <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-ceo" role="tabpanel" aria-labelledby="tabs-ceo-tab">
     <div class="container mx-auto pt-5">
       <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
         <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
@@ -1004,7 +1024,7 @@
     </div>
   </div>
 
-  <div class="tab-pane fade" id="tabs-company" role="tabpanel" aria-labelledby="tabs-company-tab">
+  <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-company" role="tabpanel" aria-labelledby="tabs-company-tab">
     <div class="container mx-auto pt-5">
       <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
         <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
@@ -1125,7 +1145,7 @@
     </div>
   </div>
 
-  <div class="tab-pane fade" id="tabs-cricketers" role="tabpanel" aria-labelledby="tabs-cricketers-tab">
+  <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-cricketers" role="tabpanel" aria-labelledby="tabs-cricketers-tab">
     <div class="container mx-auto pt-5">
       <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
         <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
@@ -1246,7 +1266,7 @@
     </div>
   </div>
 
-  <div class="tab-pane fade" id="tabs-influencers" role="tabpanel" aria-labelledby="tabs-influencers-tab">
+  <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-influencers" role="tabpanel" aria-labelledby="tabs-influencers-tab">
     <div class="container mx-auto pt-5">
       <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
         <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
@@ -1287,165 +1307,6 @@
           </div>
         </div>
 
-        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
-          <div
-            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
-            overflow-hidden bg-no-repeat bg-cover">
-            <a href="#!">
-              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
-            </a>
-            <div class="p-6 text-white">
-              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
-              <div class="font-semibold text-white">
-                <ul class="flex flex-col py-2">
-                  <li>
-                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
-                    Cr
-                  </li>
-                  <li>
-                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
-                    84/100
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
-                  </li>
-                </ul>
-                <hr class="border-gray-700" />
-              </div>
-              <div class="flex justify-between pt-2">
-                <div class="text-green-600 tracking-wider">
-                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
-                </div>
-                <div class="space-x-2 text-sm">
-                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
-                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
-          <div
-            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
-            overflow-hidden bg-no-repeat bg-cover">
-            <a href="#!">
-              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
-            </a>
-            <div class="p-6 text-white">
-              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
-              <div class="font-semibold text-white">
-                <ul class="flex flex-col py-2">
-                  <li>
-                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
-                    Cr
-                  </li>
-                  <li>
-                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
-                    84/100
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
-                  </li>
-                </ul>
-                <hr class="border-gray-700" />
-              </div>
-              <div class="flex justify-between pt-2">
-                <div class="text-green-600 tracking-wider">
-                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
-                </div>
-                <div class="space-x-2 text-sm">
-                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
-                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
-          <div
-            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
-            overflow-hidden bg-no-repeat bg-cover">
-            <a href="#!">
-              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
-            </a>
-            <div class="p-6 text-white">
-              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
-              <div class="font-semibold text-white">
-                <ul class="flex flex-col py-2">
-                  <li>
-                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
-                    Cr
-                  </li>
-                  <li>
-                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
-                    84/100
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
-                  </li>
-                </ul>
-                <hr class="border-gray-700" />
-              </div>
-              <div class="flex justify-between pt-2">
-                <div class="text-green-600 tracking-wider">
-                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
-                </div>
-                <div class="space-x-2 text-sm">
-                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
-                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
-          <div
-            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
-            overflow-hidden bg-no-repeat bg-cover">
-            <a href="#!">
-              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
-            </a>
-            <div class="p-6 text-white">
-              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
-              <div class="font-semibold text-white">
-                <ul class="flex flex-col py-2">
-                  <li>
-                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
-                    Cr
-                  </li>
-                  <li>
-                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
-                    84/100
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
-                  </li>
-                </ul>
-                <hr class="border-gray-700" />
-              </div>
-              <div class="flex justify-between pt-2">
-                <div class="text-green-600 tracking-wider">
-                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
-                </div>
-                <div class="space-x-2 text-sm">
-                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
-                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-  </div>
-    </div>
-  </div>
-
-  <div class="tab-pane fade" id="tabs-ministries" role="tabpanel" aria-labelledby="tabs-ministries-tab">
-    <div class="container mx-auto pt-5">
-      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
         <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
           <div
             class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
@@ -1602,7 +1463,166 @@
     </div>
   </div>
 
-  <div class="tab-pane fade" id="tabs-politicians" role="tabpanel" aria-labelledby="tabs-politicians-tab">
+  <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-ministries" role="tabpanel" aria-labelledby="tabs-ministries-tab">
+    <div class="container mx-auto pt-5">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+    </div>
+  </div>
+
+  <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="tabs-politicians" role="tabpanel" aria-labelledby="tabs-politicians-tab">
     <div class="container mx-auto pt-5">
       <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
         <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
@@ -2606,7 +2626,7 @@
      
     </script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <!-- flowbit javacript link for toggle-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.js" integrity="sha512-J7uKR69aZGGGVlt2wkk/bG6XKOsiRE35PE/vU+aau44g3f5bQqGoW7tKe4LKhVI57etFJOYwy/F/vCYTweELIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

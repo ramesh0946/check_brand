@@ -11,14 +11,13 @@
             href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
             />
         <script src="https://cdn.tailwindcss.com"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+        
         <!-- Font Awesome link-->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://kit.fontawesome.com/yourcode.js"
+        <!-- <script src="https://kit.fontawesome.com/yourcode.js" -->
             crossorigin="anonymous"></script>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -56,78 +55,190 @@
     <body class="bg-gray-800">
 
 
-<!-- Navbar -->
-        <nav class="bg-gray-800">
-            <div class="px-2 sm:px-6 lg:px-8">
-                <div class="relative flex h-20 items-center justify-between">
-                    <div
-                        class="flex flex-1 items-center justify-center
-                        sm:items-stretch
-                        sm:justify-start">
-                        <div class="flex flex-shrink-0 items-center">
-                            <img
-                                class="hidden h-14 w-auto lg:block"
-                                src="images/logo.png"
-                                alt="Your Company"
-                                />
-                            <div class="sm:ml-6 sm:block">
-                                <div class="flex items-center space-x-4">
-                                    <a href="#" aria-current="page"><button
-                                            class="bg-orange-500 py-2 px-4
-                                            text-white rounded-full
-                                            hover:bg-white hover:text-black">
-                                            Register Your Brand
-                                        </button></a>
-                                    <a href="#" aria-current="page"><button
-                                            class="font-bold border border-white
-                                            rounded-full py-2
-                                            px-6 text-white rounded-full
-                                            hover:bg-white
-                                            hover:text-black mr-5">
-                                            Live
-                                        </button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="absolute inset-y-0 right-0 flex items-center pr-2
-                        sm:static
-                        sm:inset-auto sm:ml-6 sm:pr-0 space-x-5">
-                        <a href="#" aria-current="page"><button
-                                class="hidden md:block bg-orange-500 py-2 px-4
-                                text-white
-                                rounded-full hover:bg-white hover:text-black">
-                                FREE DEMO
-                            </button></a>
-                        <a
-                            href="#"
-                            aria-current="page"
-                            class="hidden md:block text-white rounded-full
-                            hover:bg-white
-                            text-xl hover:text-black border-white border w-9 h-9
-                            px-1.5 py-1"><i
-                                class="fa fa-sign-in "></i></a>
-                        <a
-                            href="#"
-                            aria-current="page"
-                            class="hidden md:block text-xl text-white
-                            rounded-full
-                            hover:bg-white hover:text-black border-white border
-                            w-9 h-9 px-1.5 py-1"><i
-                                class="fa fa-search"></i></a>
-                        <a
-                            href="#"
-                            aria-current="page"
-                            class="text-white text-2xl rounded-full
-                            hover:bg-orange-500
-                            hover:text-black w-9 h-9 px-1"><i class="fa
-                                fa-bars"></i></a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+  <!-- Navbar -->
 
+  <nav class="bg-gray-800">
+    <div class="px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-20 items-center justify-between">
+        <div
+          class="flex flex-1 items-center justify-center sm:items-stretch
+          sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <img
+              class="hidden w-72 lg:block"
+              src="images/logo.png"
+              alt="Your Company"
+              />
+            <div class="sm:ml-6 sm:block">
+              <div class="flex items-center space-x-4">
+                <a href="#" aria-current="page"><button data-te-toggle="modal"
+                    data-te-target="#exampleModalLg"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    class="bg-orange-500 py-1.5 px-6 text-white rounded-full
+                    hover:bg-white hover:text-black text-lg tracking-wide">
+                    Register Your Brand
+                  </button></a>
+                <a href="live.html" aria-current="page"><button
+                    class="font-bold border border-gray-500 rounded-full py-2
+                    pr-12 pl-5 text-white rounded-full hover:bg-white
+                    hover:text-red-500 mr-5 text-left">
+                    Live
+                  </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static
+          sm:inset-auto sm:ml-6 sm:pr-0 space-x-5">
+          <a href="#" aria-current="page"><button
+              class="hidden md:block bg-orange-500 py-1.5 px-5 text-white
+              rounded-full hover:bg-white hover:text-black tracking-wide font-normal text-lg">
+              FREE DEMO
+            </button></a>
+            <a href="#" aria-current="page" class="border border-gray-500 h-10 hidden hover:bg-orange-500 md:block px-2.5 py-1.5 rounded-full text-lg text-white w-10"><i class="fa fa-sign-in"></i></a>
+            <a href="#" aria-current="page" class="bg-white border border-gray-500 h-10 hidden hover:bg-orange-500 hover:text-white md:block px-2.5 py-1 rounded-full text-xl w-10"><i class="fa fa-search"></i></a>
+              
+          <a
+            href="#"
+            aria-current="page"
+            class="text-white text-2xl rounded-full hover:bg-orange-500
+             py-1 px-2 pr-3"><i class="fa fa-bars"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Navbar modal section -->
+    
+
+
+<!-- Modal -->
+<div
+data-te-modal-init
+class="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+id="exampleModalLg"
+tabindex="-1"
+aria-labelledby="exampleModalLgLabel"
+aria-modal="true"
+role="dialog">
+<div
+  data-te-modal-dialog-ref
+  class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px]">
+  <div
+    class="pointer-events-auto relative flex w-full flex-col rounded-lg border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+    <div
+      class="flex flex-shrink-0 items-center justify-between rounded-lg border-b-2 border-neutral-100 border-opacity-100  dark:border-opacity-50">
+    <div class=" relative p-7 mx-3 pb-12">
+      <p class="text-gray-400 text-center px-12">To measure your Digital-Ranking | Digital Score | Share of Voice | Competition Analysis | Digital media monitoring</p>
+      <button class="text-white bg-gray-200 text-lg rounded-full h-8 w-8 absolute top-[5px] right-[-8px]" data-te-modal-dismiss aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="mt-8">
+        <form action="">
+          <div class="grid grid-cols-2 gap-6">
+            <div class="space-y-6">
+              <input type="text" placeholder="Brand Name *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black">
+              <input type="text" placeholder="Email Address *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+            </div>
+            <div class="space-y-6">
+              <input type="text" placeholder="Phone *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+              <input type="text" placeholder="Password *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+            </div>
+          </div>
+          <div class="bg-transparent border-0 flex justify-between mb-1.5 mt-6 outline outline-2 outline-slate-200 px-3 py-2 rounded-full select-none text-gray-400 w-full" data-collapse-toggle="grids" aria-expanded="false" id="plus_id"><p>Add Social Links </p><span class="text-black font-bold text-xl" id="plus-sign">+</span>
+          </div>
+          <div class="hidden " id="grids">
+            <div class="grid grid-cols-2 gap-x-6 mt-6" >
+              <div class="space-y-6">
+                <input type="text" placeholder="Facebook Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+                <input type="text" placeholder="Instagram Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                <input type="text" placeholder="Youtube Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                
+              </div>
+              <div class="space-y-6 mb-4">
+                <input type="text" placeholder="Twitter Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                <input type="text" placeholder="Linkedin Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                <input type="text" placeholder="Website Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                
+              </div>
+            </div>
+            <strong class="text-xs tracking-wider text-red-400 select-none  cursor-pointer " id="add_more" onclick="add()">Add More Links</strong>
+            <div class="mt-4 grid grid-cols-2 gap-6" id="new_input">
+            </div>
+          </div>
+          </div>
+
+        <div>
+          <strong class="text-xs tracking-wider text-red-400 select-none cursor-pointer" data-collapse-toggle="search" aria-expanded="false">Choose Type of Search</strong>
+          <div class="p-5 rounded-2xl border-2 border-gray-200 mt-1.5 hidden" id="search">
+            <div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio" id="radio6" name="radio" class="form-check-input">
+                <label for="radio6" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400">
+                  <i class="fa-solid fa-bolt-lightning text-xs pr-1.5"></i>Keyword Search</strong> <span class="text-gray-400 text-[16px]">Monitor the Web and Social Media for a precise topic using logical expressions and search operators. Perform a market research in a minute!</span>
+                  </label>
+              </div>
+            <div class="form-check flex mb-1.5">
+              <input type="radio" id="radio1" name="radio" class="form-check-input">
+              <label for="radio1" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400">
+                  <i class="fa-solid fa-tag text-sm pr-1.5"></i>Brand Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a brand - yours as well as your competitor's.</span>
+                </label>
+            </div>
+            <div class="form-check flex mb-1.5">
+              <input type="radio"  id="radio2" name="radio" class="form-check-input">
+              <label for="radio2" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-solid fa-user-tie text-sm pr-1.5"></i>Personal Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a person - designed for elections monitoring and constant personal PR.</span></label>
+            </div>
+            <div class="form-check flex mb-1.5">
+              <input type="radio"  id="radio3" name="radio" class="form-check-input">
+              <label for="radio3" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-solid fa-location-dot text-sm pr-1.5"></i>Local Business Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a person - designed for elections monitoring and constant personal PR.</span></label>
+            </div>
+            <div class="form-check flex mb-1.5">
+              <input type="radio"  id="radio4" name="radio" class="form-check-input">
+              <label for="radio4" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-brands fa-twitter text-sm pr-1.5"></i>Twitter Account Metrics</strong> <span class="text-gray-400 text-[16px]">Follow the messages from and to given twitter account. Explore the number of followers and other influence metrics. Useful for campaign measurement.</span></label>
+            </div>
+            <div class="form-check flex mb-1.5">
+              <input type="radio"  id="radio5" name="radio" class="form-check-input">
+              <label for="radio5" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fab fa-facebook-square text-sm pr-1.5"></i>Facebook Page Monitoring</strong> <span class="text-gray-400 text-[16px]">Follow the message from and to facebook pages. Explore the number of likes, comments and other influence metrics. Useful for campaign measurement.</span></label>
+            </div>
+          </div>
+          </div>
+        </div>
+
+          <div class="my-6">
+            <label for="" class="text-gray-400">Select User Type *</label>
+            <select name="" id="" class="px-3 py-3 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  text-sm mt-2">
+              <option value="" class="text-gray-600 text-sm">-- Select --</option>
+              <option value="" class="text-gray-600 text-sm">Politicians</option>
+              <option value="" class="text-gray-600 text-sm">Actors</option>
+              <option value=" " class="text-gray-600 text-sm">CEO</option>
+              <option value="" class="text-gray-600 text-sm">Company</option>
+              <option value="" class="text-gray-600 text-sm">Influencers</option>
+              <option value="" class="text-gray-600 text-sm">Cricketers</option>
+              <option value="" class="text-gray-600 text-sm">Ministries</option>
+              <option value="" class="text-gray-600 text-sm">Others</option>
+                  
+            </select>
+
+          </div>
+
+          <div class="mt-8">
+            <div class="text-gray-400 mb-3">
+              <input type="checkbox" name="" id="" class="text-sm rounded text-xs focus:ring-0 focus:border"><label for="" class="pl-2.5 text-sm tracking-wider font-medium">I accept <a href="/#" class="text-blue-500">terms and conditions</a></label>
+            </div>
+            <div class="text-gray-400">
+              <input type="checkbox" name="" id="" class="text-sm rounded text-xs focus:ring-0 focus:border"><label for="" class="pl-2.5 text-sm tracking-wider font-medium">I want to receive news via email</label>
+            </div>
+
+          </div>
+          <button type="submit" class="text-white tracking-wide uppercase py-3 rounded-full bg-orange-500 w-full mt-1 ">REGISTER BRAND</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 <!-- Main Tab section -->
         <div class="container mx-auto pt-3">
             <ul  
@@ -494,27 +605,28 @@
         <div class="container mx-auto">
             <div class="bg-gray-900 rounded-t-lg">
 
+
 <!-- pills ul -->
            
-          <ul class="bg-black flex  flex-wrap list-none mb-4  nav nav-pills pl-0 rounded-t-lg text-white" id="pills-tab" role="tablist">
+          <ul class="bg-black flex  flex-wrap list-none mb-4  nav nav-pills pl-0 rounded-t-lg text-white" id="pills-tab" role="tablist" data-te-nav-ref>
             <li class="nav-item " role="presentation">
-              <a href="#pills-home" class="block focus:outline-none rounded-tl-lg focus:ring-0  hover:bg-orange-500 leading-tight link px-8 py-5   active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Top Trends</a>
+              <a href="#pills-home" class="block focus:outline-none rounded-tl-lg focus:ring-0  hover:bg-orange-500 leading-tight link px-8 py-5   active" id="pills-home-tab" data-te-toggle="pill" data-te-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" data-te-nav-active>Top Trends</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a href="#pills-profile" class="block focus:outline-none focus:ring-0 hover:bg-orange-500 leading-tight link px-8 py-5  " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Top Gainers - Losers</a>
+              <a href="#pills-profile" class="block focus:outline-none focus:ring-0 hover:bg-orange-500 leading-tight link px-8 py-5  " id="pills-profile-tab" data-te-toggle="pill" data-te-target="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Top Gainers - Losers</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a href="#pills-contact" class="block focus:outline-none focus:ring-0  hover:bg-orange-500 leading-tight link px-8 py-5 " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Categories</a>
+              <a href="#pills-contact" class="block focus:outline-none focus:ring-0  hover:bg-orange-500 leading-tight link px-8 py-5 " id="pills-contact-tab" data-te-toggle="pill" data-te-target="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Categories</a>
             </li>
           
             <li class="nav-item" role="presentation">
-              <a href="#pills-disabled" class="block focus:outline-none focus:ring-0  hover:bg-orange-500 leading-tight link px-8 py-5  " id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" role="tab" aria-controls="pills-disabled" aria-selected="false">About CheckBrand</a>
+              <a href="#pills-disabled" class="block focus:outline-none focus:ring-0  hover:bg-orange-500 leading-tight link px-8 py-5  " id="pills-disabled-tab" data-te-toggle="pill" data-te-target="#pills-disabled" role="tab" aria-controls="pills-disabled" aria-selected="false">About CheckBrand</a>
             </li>
           </ul>
 <!-- pills content -->
 
-          <div class="tab-content text-white mt-0 " id="pills-tabContent">
-            <div class="tab-pane fade show active pb-5" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="tab-content text-white mt-0 "  >
+            <div class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" data-te-tab-active>
               <div class="my-5 mx-5">
                 <div class="md:flex bg-gray-700 justify-between items-center rounded-lg">
                 <div class=" md:flex py-2 rounded-2xl
@@ -616,7 +728,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade pb-5" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="grid md:grid-cols-2">
                     <div class="section1 border-r border-gray-500">
                         <h2 class="text-center text-white text-xl">Top Gainers</h2>
@@ -766,7 +878,7 @@
                 </div>
               
             </div>
-            <div class="tab-pane fade pb-5" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
               <div class="grid md:grid-cols-2 gap-x-8 mx-8">
                 <ul class="space-y-4">
                     <li class="bg-gray-800 px-3 py-1.5 text-gray-300 mb-2 rounded-lg hover:text-orange-500 hover:cursor-pointer"><i class="fa-solid fa-tag text-sm text-gray-500" style="transform: rotate(138deg);"></i><a href="" class="font-semibold pl-2"></a>Latest Search</a></li>
@@ -785,7 +897,7 @@
 
               </div>
             </div>
-            <div class="tab-pane fade pb-5" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab">
+            <div class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab">
               <div class="grid md:grid-cols-2 mx-5">
                 <div class="left-content mx-3">
                     <img src="/images/logo.png" alt="" class="" />
@@ -3775,8 +3887,9 @@
             splide.mount();
         </script>
 
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <!-- flowbit javacript link for toggle-->
-      <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     </body>
 </html>
