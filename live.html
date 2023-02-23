@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live</title>
+    <!-- Tailwind Link -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"  />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <!-- Font Awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+              padding: {
+                DEFAULT: "1rem",
+                sm: "2rem",
+                lg: "4rem",
+                xl: "9rem",
+                "2xl": "12rem",
+              },
+            },
+            extend: {},
+          },
+        };
+      </script>
+</head>
+<body class="bg-gray-800">
+    
+     <!-- Navbar -->
+
+     <nav class="bg-gray-800">
+        <div class="px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-20 items-center justify-between">
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch
+              sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img
+                  class="hidden w-72 lg:block"
+                  src="images/logo.png"
+                  alt="Your Company"
+                  />
+                <div class="sm:ml-6 sm:block">
+                  <div class="flex items-center space-x-4">
+                    <a href="#" aria-current="page"><button  data-bs-toggle="modal" data-bs-target="#exampleModalLg"
+                        class="bg-orange-500 py-1.5 px-6 text-white rounded-full
+                        hover:bg-white hover:text-black text-lg tracking-wide">
+                        Register Your Brand
+                      </button></a>
+                    <a href="#" aria-current="page"><button
+                        class="font-bold border border-gray-500 rounded-full py-2
+                        pr-12 pl-5 text-white rounded-full hover:bg-white
+                        hover:text-red-500 mr-5 text-left">
+                        Live
+                      </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static
+              sm:inset-auto sm:ml-6 sm:pr-0 space-x-5">
+              <a href="#" aria-current="page"><button
+                  class="hidden md:block bg-orange-500 py-1.5 px-5 text-white
+                  rounded-full hover:bg-white hover:text-black tracking-wide font-normal text-lg">
+                  FREE DEMO
+                </button></a>
+                <a href="#" aria-current="page" class="border border-gray-500 h-10 hidden hover:bg-orange-500 md:block px-2.5 py-1.5 rounded-full text-lg text-white w-10"><i class="fa fa-sign-in"></i></a>
+                <a href="#" aria-current="page" class="bg-white border border-gray-500 h-10 hidden hover:bg-orange-500 hover:text-white md:block px-2.5 py-1 rounded-full text-xl w-10"><i class="fa fa-search"></i></a>
+                  
+              <a
+                href="#"
+                aria-current="page"
+                class="text-white text-2xl rounded-full hover:bg-orange-500
+                 py-1 px-2 pr-3"><i class="fa fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Search -->
+    <div class="container mx-auto mt-12">
+        <div class="rounded-full outline outline-1 outline-gray-500">
+            <form action="" class="p-4 flex space-x-2">
+                <input type="text" placeholder="Search here..." class="p-3  rounded-full bg-slate-900 text-white grow">
+               
+              <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-offset-distance="2" class="text-white bg-slate-900 focus:ring-0 focus:outline-none focus:ring-blue-300  rounded-full text-sm px-4 py-2.5 text-center inline-flex items-center" type="button">Sort by Latest<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+              <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-slate-900  divide-gray-100 rounded-lg shadow  dark:bg-gray-700">
+              <ul class=" text-sm text-white mt-0" aria-labelledby="dropdownDefaultButton">
+               <li>
+                <a href="#" class="block pl-2 py-2 pr-14 hover:text-orange-400">Followers</a>
+                </li>
+               <li>
+                <a href="#" class="block pl-2 py-2 pr-14 hover:text-orange-400">Mentions</a>
+               </li>
+              </ul>
+            </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Table -->
+    <div class="container mx-auto mt-7">
+      <div class="bg-gray-700 p-2.5 rounded-lg flex items-center relative">
+      <span class="rounded-full bg-sky-200 px-3 py-0.5 text-2xl
+      font-bold text-blue-700 ">1</span>
+      <div class=" flex ">
+        <div class="mx-1 flex border-r border-gray-600">
+          <div class="w-20">
+            <img src="https://checkbrand.online/frontend/images/profile_pic_16032593891635713498.jpeg"   alt="" class="rounded-lg h-16 w-16 mx-auto">
+            <p class="text-sm text-white text-center truncate">Nike Inc.</p>
+          </div>
+          <div class="text-sm text-white pl-3 w-40 " >
+            <span class="tracking-wider text-sm text-gray-400"><i class="fa-solid fa-tags text-orange-500"></i> Value</span>
+            <p class="mt-2 tracking-wider font-semibold">5,835,774,880</p>
+            <p class="text-xs text-orange-500">(584 Cr)</p>
+          </div>
+        </div>   
+        <div class="text-sm text-white pl-2 border-r border-gray-600 w-24 " >
+          <span class="tracking-wider text-gray-400"><i class="fa-solid fa-star text-orange-500"></i> Score</span>
+          <p class="mt-2 tracking-wider font-semibold">86.37</p>
+          
+        </div>  
+        <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+          <p class="tracking-wider text-gray-400">Followers</p>
+          <div class="flex justify-between items-center">
+          <p class="mt-2 tracking-wider font-semibold">9,723,347</p>
+          <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="button1" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>  
+            </div>
+        </div>
+        <div class="text-sm text-white pl-2  border-dotted border-r-2 border-gray-500 w-32 ">
+          <p class="tracking-wider text-gray-400 leading-3">Mentions</p>
+          <span class="text-[11px] tracking-wider text-gray-400 leading-3">Today</span>
+          <p class=" tracking-wider font-semibold">2,962</p>  
+        </div> 
+        <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+          <span class="text-[11px] tracking-wider text-gray-400 leading-3 mt-2 ">14 Days</span>
+          <div class="flex justify-between items-center">
+            <p class="tracking-wider font-semibold">2,070,000</p>
+            <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="button2" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button></div>
+        </div>
+        <div class="text-sm text-white pl-2 border-r border-gray-600 w-40 ">
+          <p class="tracking-wider text-gray-400">Reach</p>
+          <div class="flex justify-between items-center">
+          <p class="mt-2 tracking-wider font-semibold">28,198,013,153</p>
+          <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="button3" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button></div>
+        </div>
+        <div class="text-sm text-white pl-2 w-[178px] ">
+          <p class="tracking-wider text-gray-400">Engagements</p>
+          <div class="flex justify-between items-center space-x-8">
+          <p class="mt-2 tracking-wider font-semibold">18,798,676,508</p>
+          <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="button4" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>
+        </div>
+        </div>
+        
+    </div>
+    <a href="live_more.html" class="text-xs font-semibold text-white bg-orange-500 rounded-t-xl px-2 py-1 absolute -right-11 rotate-90">more >></a>
+  </div>
+  <div id="button1" class="h-96 hidden bg-gray-700">
+
+  </div>
+  <div id="button2" class="h-96 hidden bg-gray-700">
+
+  </div>
+  <div id="button3" class="h-96 hidden bg-gray-700">
+
+  </div>
+  <div id="button4" class="h-96 hidden bg-gray-700">
+
+  </div>
+  <div class="bg-gray-700 p-2.5 rounded-lg flex items-center relative mt-5">
+    <span class="rounded-full bg-sky-200 px-3 py-0.5 text-2xl
+    font-bold text-blue-700 ">2</span>
+    <div class=" flex ">
+      <div class="mx-1 flex border-r border-gray-600">
+        <div class="w-20">
+          <img src="https://checkbrand.online/frontend/images/profile_pic_16045689891978785146.jpeg"   alt="" class="rounded-lg h-16 w-16 mx-auto">
+          <p class="text-sm text-white text-center truncate">Virat Kohli</p>
+        </div>
+        <div class="text-sm text-white pl-3 w-40 " >
+          <span class="tracking-wider text-sm text-gray-400"><i class="fa-solid fa-tags text-orange-500"></i> Value</span>
+          <p class="mt-2 tracking-wider font-semibold">5,249,694,200</p>
+          <p class="text-xs text-orange-500">(525 Cr)</p>
+        </div>
+      </div>   
+      <div class="text-sm text-white pl-2 border-r border-gray-600 w-24 " >
+        <span class="tracking-wider text-gray-400"><i class="fa-solid fa-star text-orange-500"></i> Score</span>
+        <p class="mt-2 tracking-wider font-semibold">83.05</p>
+        
+      </div>  
+      <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+        <p class="tracking-wider text-gray-400">Followers</p>
+        <div class="flex justify-between items-center">
+        <p class="mt-2 tracking-wider font-semibold">53,934,570</p>
+        <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="card2-btn1" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>         </div>
+      </div>
+      <div class="text-sm text-white pl-2  border-dotted border-r-2 border-gray-500 w-32 ">
+        <p class="tracking-wider text-gray-400 leading-3">Mentions</p>
+        <span class="text-[11px] tracking-wider text-gray-400 leading-3">Today</span>
+        <p class=" tracking-wider font-semibold">2,962</p>  
+      </div> 
+      <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+        <span class="text-[11px] tracking-wider text-gray-400 leading-3 mt-2 ">14 Days</span>
+        <div class="flex justify-between items-center">
+          <p class="tracking-wider font-semibold">2,070,000</p>
+          <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="card2-btn2" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>          </div>
+      </div>
+      <div class="text-sm text-white pl-2 border-r border-gray-600 w-40 ">
+        <p class="tracking-wider text-gray-400">Reach</p>
+        <div class="flex justify-between items-center">
+        <p class="mt-2 tracking-wider font-semibold">28,198,013,153</p>
+        <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="card2-btn3" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>        </div>
+      </div>
+      <div class="text-sm text-white pl-2 w-[178px] ">
+        <p class="tracking-wider text-gray-400">Engagements</p>
+        <div class="flex justify-between items-center space-x-8">
+        <p class="mt-2 tracking-wider font-semibold">108,165,771,556</p>
+        <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="card2-btn4" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>
+      </div>
+      </div>
+  </div>
+  <a href="live_more.html" class="text-xs font-semibold text-white bg-orange-500 rounded-t-xl px-2 py-1 absolute -right-11 rotate-90">more >></a>
+
+</div>
+<div id="card2-btn1" class="h-96 hidden bg-gray-700">
+
+</div>
+<div id="card2-btn2" class="h-96 hidden bg-gray-700">
+
+</div>
+<div id="card2-btn3" class="h-96 hidden bg-gray-700">
+
+</div>
+<div id="card2-btn4" class="h-96 hidden bg-gray-700">
+
+</div>
+<div class="bg-gray-700 p-2.5 rounded-lg flex items-center relative mt-5 w-full">
+  <span class="rounded-full bg-sky-200 px-3 py-0.5 text-2xl
+  font-bold text-blue-700 ">3</span>
+  <div class=" flex ">
+    <div class="mx-1 flex border-r border-gray-600">
+      <div class="w-20">
+        <img src="images/samsung.jpg"   alt="" class="rounded-lg h-16 w-16 mx-auto">
+        <p class="text-sm text-white text-center truncate">Samsung</p>
+      </div>
+      <div class="text-sm text-white pl-3 w-40 " >
+        <span class="tracking-wider text-sm text-gray-400"><i class="fa-solid fa-tags text-orange-500"></i> Value</span>
+        <p class="mt-2 tracking-wider font-semibold">5,249,694,200</p>
+        <p class="text-xs text-orange-500">(525 Cr)</p>
+      </div>
+    </div>   
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-24 " >
+      <span class="tracking-wider text-gray-400"><i class="fa-solid fa-star text-orange-500"></i> Score</span>
+      <p class="mt-2 tracking-wider font-semibold">83.05</p>
+      
+    </div>  
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <p class="tracking-wider text-gray-400">Followers</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">53,934,570</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>         </div>
+    </div>
+    <div class="text-sm text-white pl-2  border-dotted border-r-2 border-gray-500 w-32 ">
+      <p class="tracking-wider text-gray-400 leading-3">Mentions</p>
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3">Today</span>
+      <p class=" tracking-wider font-semibold">2,962</p>  
+    </div> 
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3 mt-2 ">14 Days</span>
+      <div class="flex justify-between items-center">
+        <p class="tracking-wider font-semibold">2,070,000</p>
+        <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>          </div>
+    </div>
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-40 ">
+      <p class="tracking-wider text-gray-400">Reach</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">28,013,153</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>        </div>
+    </div>
+    <div class="text-sm text-white pl-2 w-[178px]">
+      <p class="tracking-wider text-gray-400">Engagements</p>
+      <div class="flex justify-between items-center ">
+      <p class="mt-2 tracking-wider font-semibold">108,165</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black " data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>
+    </div>
+    </div>
+</div>
+<a href="live_more.html" class="text-xs font-semibold text-white bg-orange-500 rounded-t-xl px-2 py-1 absolute -right-11 rotate-90">more >></a>
+</div>
+<div class="bg-gray-700 p-2.5 rounded-lg flex items-center relative mt-5">
+  <span class="rounded-full bg-sky-200 px-3 py-0.5 text-2xl
+  font-bold text-blue-700 ">4</span>
+  <div class=" flex ">
+    <div class="mx-1 flex border-r border-gray-600">
+      <div class="w-20">
+        <img src="https://checkbrand.online/frontend/images/160162865345393772.jpeg"   alt="" class="rounded-lg h-16 w-16 mx-auto">
+        <p class="text-sm text-white text-center truncate">Narendra Modi</p>
+      </div>
+      <div class="text-sm text-white pl-3 w-40 " >
+        <span class="tracking-wider text-sm text-gray-400"><i class="fa-solid fa-tags text-orange-500"></i> Value</span>
+        <p class="mt-2 tracking-wider font-semibold">5,249,694,200</p>
+        <p class="text-xs text-orange-500">(525 Cr)</p>
+      </div>
+    </div>   
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-24 " >
+      <span class="tracking-wider text-gray-400"><i class="fa-solid fa-star text-orange-500"></i> Score</span>
+      <p class="mt-2 tracking-wider font-semibold">83.05</p>
+      
+    </div>  
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <p class="tracking-wider text-gray-400">Followers</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">53,934,570</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>         </div>
+    </div>
+    <div class="text-sm text-white pl-2  border-dotted border-r-2 border-gray-500 w-32 ">
+      <p class="tracking-wider text-gray-400 leading-3">Mentions</p>
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3">Today</span>
+      <p class=" tracking-wider font-semibold">2,962</p>  
+    </div> 
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3 mt-2 ">14 Days</span>
+      <div class="flex justify-between items-center">
+        <p class="tracking-wider font-semibold">2,070,000</p>
+        <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>          </div>
+    </div>
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-40 ">
+      <p class="tracking-wider text-gray-400">Reach</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">28,198,013,153</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>        </div>
+    </div>
+    <div class="text-sm text-white pl-2  w-[178px]">
+      <p class="tracking-wider text-gray-400">Engagements</p>
+      <div class="flex justify-between items-center space-x-8">
+      <p class="mt-2 tracking-wider font-semibold">108,165,771,556</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>
+    </div>
+    </div>
+</div>
+<a href="live_more.html" class="text-xs font-semibold text-white bg-orange-500 rounded-t-xl px-2 py-1 absolute -right-11 rotate-90">more >></a>
+</div>
+<div class="bg-gray-700 p-2.5 rounded-lg flex items-center relative mt-5">
+  <span class="rounded-full bg-sky-200 px-3 py-0.5 text-2xl
+  font-bold text-blue-700 ">5</span>
+  <div class=" flex ">
+    <div class="mx-1 flex border-r border-gray-600">
+      <div class="w-20">
+        <img src="https://checkbrand.online/frontend/images/160162865345393772.jpeg"   alt="" class="rounded-lg h-16 w-16 mx-auto">
+        <p class="text-sm text-white text-center truncate">Narendra Modi</p>
+      </div>
+      <div class="text-sm text-white pl-3 w-40 " >
+        <span class="tracking-wider text-sm text-gray-400"><i class="fa-solid fa-tags text-orange-500"></i> Value</span>
+        <p class="mt-2 tracking-wider font-semibold">5,249,694,200</p>
+        <p class="text-xs text-orange-500">(525 Cr)</p>
+      </div>
+    </div>   
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-24 " >
+      <span class="tracking-wider text-gray-400"><i class="fa-solid fa-star text-orange-500"></i> Score</span>
+      <p class="mt-2 tracking-wider font-semibold">83.05</p>
+      
+    </div>  
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <p class="tracking-wider text-gray-400">Followers</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">53,934,570</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>         </div>
+    </div>
+    <div class="text-sm text-white pl-2  border-dotted border-r-2 border-gray-500 w-32 ">
+      <p class="tracking-wider text-gray-400 leading-3">Mentions</p>
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3">Today</span>
+      <p class=" tracking-wider font-semibold">2,962</p>  
+    </div> 
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3 mt-2 ">14 Days</span>
+      <div class="flex justify-between items-center">
+        <p class="tracking-wider font-semibold">2,070,000</p>
+        <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>          </div>
+    </div>
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-40 ">
+      <p class="tracking-wider text-gray-400">Reach</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">28,198,013,153</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>        </div>
+    </div>
+    <div class="text-sm text-white pl-2 w-[178px] ">
+      <p class="tracking-wider text-gray-400">Engagements</p>
+      <div class="flex justify-between items-center space-x-8">
+      <p class="mt-2 tracking-wider font-semibold">108,165,771,556</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>
+    </div>
+    </div>
+</div>
+<a href="live_more.html" class="text-xs font-semibold text-white bg-orange-500 rounded-t-xl px-2 py-1 absolute -right-11 rotate-90">more >></a>
+</div>
+<div class="bg-gray-700 p-2.5 rounded-lg flex items-center relative mt-5">
+  <span class="rounded-full bg-sky-200 px-3 py-0.5 text-2xl
+  font-bold text-blue-700 ">6</span>
+  <div class=" flex ">
+    <div class="mx-1 flex border-r border-gray-600">
+      <div class="w-20">
+        <img src="https://checkbrand.online/frontend/images/160162865345393772.jpeg"   alt="" class="rounded-lg h-16 w-16 mx-auto">
+        <p class="text-sm text-white text-center truncate">Narendra Modi</p>
+      </div>
+      <div class="text-sm text-white pl-3 w-40 " >
+        <span class="tracking-wider text-sm text-gray-400"><i class="fa-solid fa-tags text-orange-500"></i> Value</span>
+        <p class="mt-2 tracking-wider font-semibold">5,249,694,200</p>
+        <p class="text-xs text-orange-500">(525 Cr)</p>
+      </div>
+    </div>   
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-24 " >
+      <span class="tracking-wider text-gray-400"><i class="fa-solid fa-star text-orange-500"></i> Score</span>
+      <p class="mt-2 tracking-wider font-semibold">83.05</p>
+      
+    </div>  
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <p class="tracking-wider text-gray-400">Followers</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">53,934,570</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>         </div>
+    </div>
+    <div class="text-sm text-white pl-2  border-dotted border-r-2 border-gray-500 w-32 ">
+      <p class="tracking-wider text-gray-400 leading-3">Mentions</p>
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3">Today</span>
+      <p class=" tracking-wider font-semibold">2,962</p>  
+    </div> 
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3 mt-2 ">14 Days</span>
+      <div class="flex justify-between items-center">
+        <p class="tracking-wider font-semibold">2,070,000</p>
+        <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>          </div>
+    </div>
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-40 ">
+      <p class="tracking-wider text-gray-400">Reach</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">28,198,013,153</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>        </div>
+    </div>
+    <div class="text-sm text-white pl-2 w-[178px] ">
+      <p class="tracking-wider text-gray-400">Engagements</p>
+      <div class="flex justify-between items-center space-x-8">
+      <p class="mt-2 tracking-wider font-semibold">108,165,771,556</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>
+    </div>
+    </div>
+</div>
+<a href="live_more.html" class="text-xs font-semibold text-white bg-orange-500 rounded-t-xl px-2 py-1 absolute -right-11 rotate-90">more >></a>
+</div>
+<div class="bg-gray-700 p-2.5 rounded-lg flex items-center relative mt-5">
+  <span class="rounded-full bg-sky-200 px-3 py-0.5 text-2xl
+  font-bold text-blue-700 ">7</span>
+  <div class=" flex ">
+    <div class="mx-1 flex border-r border-gray-600">
+      <div class="w-20">
+        <img src="https://checkbrand.online/frontend/images/160162865345393772.jpeg"   alt="" class="rounded-lg h-16 w-16 mx-auto">
+        <p class="text-sm text-white text-center truncate">Narendra Modi</p>
+      </div>
+      <div class="text-sm text-white pl-3 w-40 " >
+        <span class="tracking-wider text-sm text-gray-400"><i class="fa-solid fa-tags text-orange-500"></i> Value</span>
+        <p class="mt-2 tracking-wider font-semibold">5,249,694,200</p>
+        <p class="text-xs text-orange-500">(525 Cr)</p>
+      </div>
+    </div>   
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-24 " >
+      <span class="tracking-wider text-gray-400"><i class="fa-solid fa-star text-orange-500"></i> Score</span>
+      <p class="mt-2 tracking-wider font-semibold">83.05</p>
+      
+    </div>  
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <p class="tracking-wider text-gray-400">Followers</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">53,934,570</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>         </div>
+    </div>
+    <div class="text-sm text-white pl-2  border-dotted border-r-2 border-gray-500 w-32 ">
+      <p class="tracking-wider text-gray-400 leading-3">Mentions</p>
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3">Today</span>
+      <p class=" tracking-wider font-semibold">2,962</p>  
+    </div> 
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3 mt-2 ">14 Days</span>
+      <div class="flex justify-between items-center">
+        <p class="tracking-wider font-semibold">2,070,000</p>
+        <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>          </div>
+    </div>
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-40 ">
+      <p class="tracking-wider text-gray-400">Reach</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">28,198,013,153</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>        </div>
+    </div>
+    <div class="text-sm text-white pl-2  w-[178px]">
+      <p class="tracking-wider text-gray-400">Engagements</p>
+      <div class="flex justify-between items-center space-x-8">
+      <p class="mt-2 tracking-wider font-semibold">108,165,771,556</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>
+    </div>
+    </div>
+</div>
+<a href="live_more.html" class="text-xs font-semibold text-white bg-orange-500 rounded-t-xl px-2 py-1 absolute -right-11 rotate-90">more >></a>
+</div>
+<div class="bg-gray-700 p-2.5 rounded-lg flex items-center relative mt-5">
+  <span class="rounded-full bg-sky-200 px-3 py-0.5 text-2xl
+  font-bold text-blue-700 ">8</span>
+  <div class=" flex ">
+    <div class="mx-1 flex border-r border-gray-600">
+      <div class="w-20">
+        <img src="https://checkbrand.online/frontend/images/160162865345393772.jpeg"   alt="" class="rounded-lg h-16 w-16 mx-auto">
+        <p class="text-sm text-white text-center truncate">Narendra Modi</p>
+      </div>
+      <div class="text-sm text-white pl-3 w-40 " >
+        <span class="tracking-wider text-sm text-gray-400"><i class="fa-solid fa-tags text-orange-500"></i> Value</span>
+        <p class="mt-2 tracking-wider font-semibold">5,249,694,200</p>
+        <p class="text-xs text-orange-500">(525 Cr)</p>
+      </div>
+    </div>   
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-24 " >
+      <span class="tracking-wider text-gray-400"><i class="fa-solid fa-star text-orange-500"></i> Score</span>
+      <p class="mt-2 tracking-wider font-semibold">83.05</p>
+      
+    </div>  
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <p class="tracking-wider text-gray-400">Followers</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">53,934,570</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>         </div>
+    </div>
+    <div class="text-sm text-white pl-2  border-dotted border-r-2 border-gray-500 w-32 ">
+      <p class="tracking-wider text-gray-400 leading-3">Mentions</p>
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3">Today</span>
+      <p class=" tracking-wider font-semibold">2,962</p>  
+    </div> 
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-36 ">
+      <span class="text-[11px] tracking-wider text-gray-400 leading-3 mt-2 ">14 Days</span>
+      <div class="flex justify-between items-center">
+        <p class="tracking-wider font-semibold">2,070,000</p>
+        <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>          </div>
+    </div>
+    <div class="text-sm text-white pl-2 border-r border-gray-600 w-40 ">
+      <p class="tracking-wider text-gray-400">Reach</p>
+      <div class="flex justify-between items-center">
+      <p class="mt-2 tracking-wider font-semibold">28,198,013,153</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>        </div>
+    </div>
+    <div class="text-sm text-white pl-2  w-[178px]">
+      <p class="tracking-wider text-gray-400">Engagements</p>
+      <div class="flex justify-between items-center space-x-8">
+      <p class="mt-2 tracking-wider font-semibold">108,165,771,556</p>
+      <button class="bg-white h-6 hover:bg-orange-500 hover:text-white mr-1 mt-2.5 rounded-full w-6 text-base text-black" data-collapse-toggle="online-Influencer" aria-expanded="false"><i class="fa-plus fa-sharp fa-solid "></i></button>
+    </div>
+    </div>
+</div>
+<a href="live_more.html" class="text-xs font-semibold text-white bg-orange-500 rounded-t-xl px-2 py-1 absolute -right-11 rotate-90">more >></a>
+</div>
+</div>
+<footer class="py-10 my-10 mx-5 bg-black rounded-xl">
+  <div class="first">
+    <div class="container mx-auto">
+      <div class="grid lg:grid-cols-3 py-10">
+        <div class="flex lg:justify-end ">
+          <img src="/images/logo.png" alt="" class="w-34" />
+        </div>
+        <div class="col-span-2 text-white px-4">
+          <p>
+            CheckBrand is the only platform to track your digital ranking,
+            digital presence, and social media presence along with detailed
+            analytics reports by which you can measure all the parameters of
+            a digital domain.
+          </p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-4">
+        <div class="text-white flex">
+          <ul class="flex flex-col cursor-pointer font-semibold space-y-2">
+            <li class="hover:underline">Home</li>
+            <li class="hover:underline">TOP 100</li>
+            <li class="hover:underline">Trends</li>
+            <li class="hover:underline">Google Search</li>
+            <li class="hover:underline">Top Wiki</li>
+          </ul>
+          <ul class="ml-6 flex flex-col cursor-pointer font-semibold space-y-2">
+            <li class="hover:underline">Price</li>
+            <li class="hover:underline">Register Your Brand</li>
+            <li class="hover:underline">Top News</li>
+            <li class="hover:underline">Top 500</li>
+            <li class="hover:underline">Contact Us</li>
+          </ul>
+        </div>
+        <div class="text-white w-full px-2 py-6">
+          <h1 class="tracking-wider font-semibold py-3">SUBSCRIPTION</h1>
+          <form action="">
+            <div class="flex flex-row">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="w-full py-2 px-2 rounded-full w-full"
+                />
+              <span>
+                <button class="bg-orange-500 py-2 px-2 rounded-full -ml-10">
+                  Subscribe
+                </button></span>
+            </div>
+          </form>
+        </div>
+        <div class="w-14 m-5">
+          <h2 class="text-white font-semibold pb-2">LIKE</h2>
+          <div>
+            <div class="text-xs text-black bg-white p-0\.5 text-center">
+              17k
+            </div>
+            <div class="text-xs text-white bg-blue-500 rounded-sm p-0\.5">
+              <button
+                type="button"
+                class="inline-block font-medium text-xs leading-tight
+                capitalize transition duration-150 ease-in-out">
+                <i class="fa-solid fa-thumbs-up pl-1"></i> Follow
+              </button>
+            </div>
+            <div
+              class="text-xs text-white bg-blue-500 p-0\.5 my-2 rounded-sm
+              text-center">
+              <button
+                type="button"
+                class="inline-block font-medium text-xs leading-tight
+                capitalize transition duration-150 ease-in-out">
+                Share
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-white text-lg tracking-wider py-3">FOLLOW US</h2>
+          <ul class="flex lg:flex-row  space-x-2 text-lg">
+            <li class="text-black bg-white rounded-full px-3 py-1">
+              <i class="fa fa-facebook-f"></i>
+            </li>
+            <li class="text-black bg-white rounded-full px-2 py-1">
+              <i class="fa-brands fa-twitter"></i>
+            </li>
+            <li class="text-black bg-white rounded-full px-2 py-1">
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li class="text-black bg-white rounded-full px-2 py-1">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </li>
+            <li class="text-black bg-white rounded-full px-2 py-1">
+              <i class="fa-brands fa-youtube"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-700 border-t" />
+  </div>
+
+  <div class="middle text-white text-center text-sm">
+    <div class="container mx-auto tracking-wider leading-7">
+      <a href="/#" class="px-2 border-gray-700 border-r">Product Launch</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Share of Voice</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Media Monitoring</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">AI-Based Sentiment Analysis</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Social Listening</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">ORM</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Market Research</a>
+      <br>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Monitor the Market and Trends</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Gather Audience Insights</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Analytics</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Social Media Reports</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Media Monitoring</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Digital Survey</a>
+      <br>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Digital Research</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Alerting</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Competitive Intelligence</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Trend Analysis</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Sales Intelligence</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Market Intelligence</a>
+      <a href="/#" class="border-gray-700 border-r px-2 ">Brand Management</a>
+      <br>
+      <a href="/#" class="border-gray-700 border-r pr-2">Branding Campaign</a>
+      <a href="/#" class="border-gray-700 border-r pr-2">PR Reporting</a>
+      <a href="/#" class="border-gray-700 border-r pr-2">Campaign Management</a>
+      <a href="/#" class="border-gray-700 border-r pr-2">In Media</a>
+
+
+      
+      
+      
+      
+    </div>
+    <hr class="mt-6 border-gray-700 border-t" />
+
+  </div>
+
+  <div class="bottom">
+    <div class="container mx-auto my-2">
+      <div class="grid lg:grid-cols-2">
+        <div class="text-white text-xs space-x-2 items-center flex flex-wrap"> 
+          CheckBrand © 2020
+          <a href="/#" class="pl-2">About</a>
+          <a href="/#">Privacy Policy</a>
+          <a href="/#">Cookie Policy</a>
+          <a href="/#">Terms of Use</a>
+          <a href="/#">Disclaimer</a>
+          <a href="/#">F.A.Q.</a>
+          <a href="/#">BLOGS</a>
+
+
+        </div>
+        <div class="text-white text-xs flex justify-between items-center">
+          <img src="/images/logo_footer.png" class="w-28 hidden lg:block" alt="">
+          <span>Powered by <a href="/#">ADG Online Solutions </a></span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+ 
+
+      <!-- flowbite  link -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,2614 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Tailwind Link -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"  />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <!-- Font Awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+
+
+  <!-- flowbite popover link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            padding: {
+              DEFAULT: "1rem",
+              sm: "2rem",
+              lg: "4rem",
+              xl: "9rem",
+              "2xl": "7rem",
+            },
+          },
+          extend: {},
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-gray-900">
+    <!-- Navbar -->
+
+    <nav class="bg-gray-800">
+      <div class="px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-20 items-center justify-between">
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch
+            sm:justify-start">
+            <div class="flex flex-shrink-0 items-center">
+              <img
+                class="hidden w-72 lg:block"
+                src="images/logo.png"
+                alt="Your Company"
+                />
+              <div class="sm:ml-6 sm:block">
+                <div class="flex items-center space-x-4">
+                  <a href="#" aria-current="page"><button  data-bs-toggle="modal" data-bs-target="#exampleModalLg"
+                      class="bg-orange-500 py-1.5 px-6 text-white rounded-full
+                      hover:bg-white hover:text-black text-lg tracking-wide">
+                      Register Your Brand
+                    </button></a>
+                  <a href="#" aria-current="page"><button
+                      class="font-bold border border-gray-500 rounded-full py-2
+                      pr-12 pl-5 text-white rounded-full hover:bg-white
+                      hover:text-red-500 mr-5 text-left">
+                      Live
+                    </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static
+            sm:inset-auto sm:ml-6 sm:pr-0 space-x-5">
+            <a href="#" aria-current="page"><button
+                class="hidden md:block bg-orange-500 py-1.5 px-5 text-white
+                rounded-full hover:bg-white hover:text-black tracking-wide font-normal text-lg">
+                FREE DEMO
+              </button></a>
+              <a href="#" aria-current="page" class="border border-gray-500 h-10 hidden hover:bg-orange-500 md:block px-2.5 py-1.5 rounded-full text-lg text-white w-10"><i class="fa fa-sign-in"></i></a>
+              <a href="#" aria-current="page" class="bg-white border border-gray-500 h-10 hidden hover:bg-orange-500 hover:text-white md:block px-2.5 py-1 rounded-full text-xl w-10"><i class="fa fa-search"></i></a>
+                
+            <a
+              href="#"
+              aria-current="page"
+              class="text-white text-2xl rounded-full hover:bg-orange-500
+               py-1 px-2 pr-3"><i class="fa fa-bars"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar modal section -->
+    
+
+
+<!-- Modal -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
+    <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-2xl outline-none text-current">
+      <div class="modal-body relative p-7 mx-3 pb-12">
+        <p class="text-gray-400 text-center px-12">To measure your Digital-Ranking | Digital Score | Share of Voice | Competition Analysis | Digital media monitoring</p>
+        <button class="text-white bg-gray-200 text-lg rounded-full h-8 w-8 absolute top-[5px] right-[-8px]" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+        <div class="mt-8">
+          <form action="">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="space-y-6">
+                <input type="text" placeholder="Brand Name *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black">
+                <input type="text" placeholder="Email Address *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+              </div>
+              <div class="space-y-6">
+                <input type="text" placeholder="Phone *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+                <input type="text" placeholder="Password *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+              </div>
+            </div>
+            <div class="bg-transparent border-0 flex justify-between mb-1.5 mt-6 outline outline-2 outline-slate-200 px-3 py-2 rounded-full select-none text-gray-400 w-full" data-collapse-toggle="grids" aria-expanded="false" id="plus_id"><p>Add Social Links </p><span class="text-black font-bold text-xl" id="plus-sign">+</span>
+            </div>
+            <div class="hidden " id="grids">
+              <div class="grid grid-cols-2 gap-x-6 mt-6" >
+                <div class="space-y-6">
+                  <input type="text" placeholder="Facebook Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+                  <input type="text" placeholder="Instagram Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  <input type="text" placeholder="Youtube Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  
+                </div>
+                <div class="space-y-6 mb-4">
+                  <input type="text" placeholder="Twitter Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  <input type="text" placeholder="Linkedin Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  <input type="text" placeholder="Website Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  
+                </div>
+              </div>
+              <strong class="text-xs tracking-wider text-red-400 select-none  cursor-pointer " id="add_more" onclick="add()">Add More Links</strong>
+              <div class="mt-4 grid grid-cols-2 gap-6" id="new_input">
+              </div>
+            </div>
+            </div>
+
+          <div>
+            <strong class="text-xs tracking-wider text-red-400 select-none cursor-pointer" data-collapse-toggle="search" aria-expanded="false">Choose Type of Search</strong>
+            <div class="p-5 rounded-2xl border-2 border-gray-200 mt-1.5 hidden" id="search">
+              <div>
+                <div class="form-check flex mb-1.5">
+                  <input type="radio" id="radio6" name="radio" class="form-check-input">
+                  <label for="radio6" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400">
+                    <i class="fa-solid fa-bolt-lightning text-xs pr-1.5"></i>Keyword Search</strong> <span class="text-gray-400 text-[16px]">Monitor the Web and Social Media for a precise topic using logical expressions and search operators. Perform a market research in a minute!</span>
+                    </label>
+                </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio" id="radio1" name="radio" class="form-check-input">
+                <label for="radio1" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400">
+                    <i class="fa-solid fa-tag text-sm pr-1.5"></i>Brand Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a brand - yours as well as your competitor's.</span>
+                  </label>
+              </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio"  id="radio2" name="radio" class="form-check-input">
+                <label for="radio2" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-solid fa-user-tie text-sm pr-1.5"></i>Personal Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a person - designed for elections monitoring and constant personal PR.</span></label>
+              </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio"  id="radio3" name="radio" class="form-check-input">
+                <label for="radio3" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-solid fa-location-dot text-sm pr-1.5"></i>Local Business Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a person - designed for elections monitoring and constant personal PR.</span></label>
+              </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio"  id="radio4" name="radio" class="form-check-input">
+                <label for="radio4" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-brands fa-twitter text-sm pr-1.5"></i>Twitter Account Metrics</strong> <span class="text-gray-400 text-[16px]">Follow the messages from and to given twitter account. Explore the number of followers and other influence metrics. Useful for campaign measurement.</span></label>
+              </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio"  id="radio5" name="radio" class="form-check-input">
+                <label for="radio5" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fab fa-facebook-square text-sm pr-1.5"></i>Facebook Page Monitoring</strong> <span class="text-gray-400 text-[16px]">Follow the message from and to facebook pages. Explore the number of likes, comments and other influence metrics. Useful for campaign measurement.</span></label>
+              </div>
+            </div>
+            </div>
+          </div>
+
+            <div class="my-6">
+              <label for="" class="text-gray-400">Select User Type *</label>
+              <select name="" id="" class="px-3 py-3 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  text-sm mt-2">
+                <option value="" class="text-gray-600 text-sm">-- Select --</option>
+                <option value="" class="text-gray-600 text-sm">Politicians</option>
+                <option value="" class="text-gray-600 text-sm">Actors</option>
+                <option value=" " class="text-gray-600 text-sm">CEO</option>
+                <option value="" class="text-gray-600 text-sm">Company</option>
+                <option value="" class="text-gray-600 text-sm">Influencers</option>
+                <option value="" class="text-gray-600 text-sm">Cricketers</option>
+                <option value="" class="text-gray-600 text-sm">Ministries</option>
+                <option value="" class="text-gray-600 text-sm">Others</option>
+                    
+              </select>
+
+            </div>
+
+            <div class="mt-8">
+              <div class="text-gray-400 mb-3">
+                <input type="checkbox" name="" id="" class="text-sm rounded text-xs focus:ring-0 focus:border"><label for="" class="pl-2.5 text-sm tracking-wider font-medium">I accept <a href="/#" class="text-blue-500">terms and conditions</a></label>
+              </div>
+              <div class="text-gray-400">
+                <input type="checkbox" name="" id="" class="text-sm rounded text-xs focus:ring-0 focus:border"><label for="" class="pl-2.5 text-sm tracking-wider font-medium">I want to receive news via email</label>
+              </div>
+
+            </div>
+            <button type="submit" class="text-white tracking-wide uppercase py-3 rounded-full bg-orange-500 w-full mt-1 ">REGISTER BRAND</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Hero section -->
+
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide relative"
+      data-bs-ride="carousel">
+      <div class="carousel-inner relative w-full overflow-hidden">
+        <div class="carousel-item active relative float-left w-full max-h-[592px]">
+          <img
+            src="/images/s1.jpg"
+            class="block w-full opacity-60 "
+            alt="Wild Landscape"
+            />
+          <div class="carousel-caption absolute text-center mx-[14%]">
+            <h1
+              class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
+              More engaging content, more engaged followers
+            </h1>
+            <p class="font-light my-3 text-lg tracking-wide">
+              Something helpful, inspiring, or entertaining. Engaging content
+              gives your reader a peek at something he/she hasn't seen before
+              but can relate to in some way
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item relative float-left w-full max-h-[592px]" >
+          <img
+            src="/images/s2.jpg"
+            class="block w-full opacity-60 "
+            alt="Camera"
+            />
+          <div class="carousel-caption absolute text-center mx-[14%]">
+            <h1
+              class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
+              Check Online Reputation
+            </h1>
+            <p class="font-light my-3 text-lg tracking-wide">
+              Manage your brand's negative information from search results.
+              Repair negative links. Manage your brand visibility with our
+              effective ORM services.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item relative float-left w-full max-h-[592px]">
+          <img
+            src="/images/s3.jpg"
+            class="block w-full opacity-60 "
+            alt="Exotic Fruits"
+            />
+          <div class="carousel-caption absolute text-center mx-[14%]">
+            <h1
+              class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
+              Check Your Digital Rank and Score
+            </h1>
+            <p class="font-light my-3 text-lg tracking-wide">
+              CheckBrand helps you to measure your Online Reputation, Brand
+              Index with others. We use Artificial Intelligence to measure your
+              brand impact
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs section -->
+
+    <div class="container mx-auto py-3">
+      <ul
+        class="nav space-x-4 nav-tabs flex justify-center flex-wrap list-none
+        border-b-0 pl-0 mb-4"
+        id="tabs-tab"
+        role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            href="#tabs-top100"
+            class="nav-link block p-4 text-white hover:border-b-2 
+            border-orange-600 rounded-t-lg "
+            id="tabs-top100-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tabs-top100"
+            role="tab"
+            aria-controls="tabs-top100"
+            aria-selected="true"><img
+              src="https://checkbrand.online/frontend/images/icon_in/01.png"
+              class="mx-auto text-white"
+              />
+            <span class="text-white tracking-wide">Top 100</span></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            href="#tabs-actors"
+            class="nav-link inline-block p-4 text-white hover:border-b-2
+            border-orange-600 rounded-t-lg"
+            id="tabs-actors-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tabs-actors"
+            role="tab"
+            aria-controls="tabs-actors"
+            aria-selected="false"><img
+              src="https://checkbrand.online/frontend/images/icon_in/03.png"
+              alt=""
+              class="mx-auto"
+              />
+            <span class="text-white tracking-wide">Actors</span></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            href="#tabs-ceo"
+            class="nav-link inline-block p-4 text-white hover:border-b-2
+            border-orange-600 rounded-t-lg"
+            id="tabs-ceo-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tabs-ceo"
+            role="tab"
+            aria-controls="tabs-ceo"
+            aria-selected="false"><img
+              src="https://checkbrand.online/frontend/images/icon_in/04.png"
+              alt=""
+              class="mx-auto"
+              />
+            <span class="text-white tracking-wide">CEO</span></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            href="#tabs-company"
+            class="nav-link inline-block p-4 text-white hover:border-b-2
+            border-orange-600 rounded-t-lg"
+            id="tabs-company-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tabs-company"
+            role="tab"
+            aria-controls="tabs-company"
+            aria-selected="false"><img
+              src="https://checkbrand.online/frontend/images/icon_in/04.png"
+              alt=""
+              class="mx-auto"
+              />
+            <span class="text-white tracking-wide">Company</span></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            href="#tabs-cricketers"
+            class="nav-link inline-block p-4 text-white hover:border-b-2
+            border-orange-600 rounded-t-lg"
+            id="tabs-cricketers-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tabs-cricketers"
+            role="tab"
+            aria-controls="tabs-cricketers"
+            aria-selected="false"><img
+              src="https://checkbrand.online/frontend/images/icon_in/04.png"
+              alt=""
+              class="mx-auto"
+              />
+            <span class="text-white tracking-wide">Cricketers</span></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            href="#tabs-influencers"
+            class="nav-link inline-block p-4 text-white hover:border-b-2
+            border-orange-600 rounded-t-lg"
+            id="tabs-influencers-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tabs-influencers"
+            role="tab"
+            aria-controls="tabs-influencers"
+            aria-selected="false"><img
+              src="https://checkbrand.online/frontend/images/icon_in/04.png"
+              alt=""
+              class="mx-auto"
+              />
+            <span class="text-white tracking-wide">Influencers</span></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            href="#tabs-ministries"
+            class="nav-link inline-block p-4 text-white hover:border-b-2
+            border-orange-600 rounded-t-lg"
+            id="tabs-ministries-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tabs-ministries"
+            role="tab"
+            aria-controls="tabs-ministries"
+            aria-selected="false"><img
+              src="https://checkbrand.online/frontend/images/icon_in/04.png"
+              alt=""
+              class="mx-auto"
+              />
+            <span class="text-white tracking-wide">Ministries</span></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            href="#tabs-politicians"
+            class="nav-link inline-block p-4 text-white hover:border-b-2
+            border-orange-600 rounded-t-lg"
+            id="tabs-politicians-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tabs-politicians"
+            role="tab"
+            aria-controls="tabs-politicians"
+            aria-selected="false"><img
+              src="https://checkbrand.online/frontend/images/icon_in/06.png"
+              alt=""
+              class="mx-auto"
+              />
+            <span class="text-white tracking-wide">Politicians</span></a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- Popover -->
+
+    <div data-popover id="popover-animation" role="tooltip" class="absolute z-10 invisible inline-block w-72 text-sm font-light text-gray-500 transition-opacity duration-300   rounded-xl shadow-sm opacity-0 ">
+      <div class="bg-gray-500 rounded-lg ">
+
+        <div class="text-white px-5 pt-10 flex ">
+          <i class="fa-sharp fa-solid fa-retweet bg-gray-900 rounded-md p-3 items-center flex"></i>
+          <div class="px-4">
+            <h3 class="font-semibold">Mentions</h3>
+            <p class="text-gray-400">835300</p>
+            
+          </div>  
+        </div>
+        <hr class="border-gray-700 mx-4 my-3" />
+        <div class="text-white px-5 py-1 flex  ">
+          <i class="fa-solid fa-bullhorn bg-gray-900 rounded-md  px-3.5 items-center flex"></i>
+          <div class="px-4 ">
+            <h3 class="font-semibold">Engagement</h3>
+            <p class="text-gray-400">2700000</p>
+          </div>
+        </div>
+        <hr class="border-gray-700 mx-4 my-3 pb-64" />
+      </div>
+      <div data-popper-arrow></div>
+  </div>
+
+
+
+    <!-- Card Section -->
+
+    <div class="tab-content" id="tabs-tabContent">
+  <div class="tab-pane fade show active" id="tabs-top100" role="tabpanel" aria-labelledby="tabs-top100-tab">
+    <div class="container mx-auto pt-5">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-bs-trigger="hover focus" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="tabs-actors" role="tabpanel" aria-labelledby="tabs-actors-tab">
+    <div class="container mx-auto pt-5">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="tabs-ceo" role="tabpanel" aria-labelledby="tabs-ceo-tab">
+    <div class="container mx-auto pt-5">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="tabs-company" role="tabpanel" aria-labelledby="tabs-company-tab">
+    <div class="container mx-auto pt-5">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="tabs-cricketers" role="tabpanel" aria-labelledby="tabs-cricketers-tab">
+    <div class="container mx-auto pt-5">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="tabs-influencers" role="tabpanel" aria-labelledby="tabs-influencers-tab">
+    <div class="container mx-auto pt-5">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="tabs-ministries" role="tabpanel" aria-labelledby="tabs-ministries-tab">
+    <div class="container mx-auto pt-5">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="tabs-politicians" role="tabpanel" aria-labelledby="tabs-politicians-tab">
+    <div class="container mx-auto pt-5">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-6 py-3 px-3">
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25"> 
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="flex justify-center" data-popover-placement="right" data-popover-target="popover-animation" data-popover-offset="25">
+          <div
+            class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+            overflow-hidden bg-no-repeat bg-cover">
+            <a href="#!">
+              <img class="rounded-t-lg" src="/images/virat.jpeg" alt="" />
+            </a>
+            <div class="p-6 text-white">
+              <h5 class="text-xl font-medium mb-2">Virat Kohli</h5>
+              <div class="font-semibold text-white">
+                <ul class="flex flex-col py-2">
+                  <li>
+                    <i class="fa-solid fa-tag pr-3 text-gray-500"></i>Value: 525
+                    Cr
+                  </li>
+                  <li>
+                    <i class="fas fa-chart-line pr-3 text-gray-500"></i>Score:
+                    84/100
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-star pr-3 text-gray-500"></i>Rating: 4
+                  </li>
+                </ul>
+                <hr class="border-gray-700" />
+              </div>
+              <div class="flex justify-between pt-2">
+                <div class="text-green-600 tracking-wider">
+                  <i class="fa fa-arrow-circle-up"><span class="px-2 text-xs">39.1%</span></i>
+                </div>
+                <div class="space-x-2 text-sm">
+                  <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                  <i class="fa-solid fa-thumbs-down"><span class="px-2">0</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+    </div>
+  </div>
+
+ </div> 
+
+
+
+    
+
+    <!-- Why Digital Ranking -->
+
+    <section class="container mx-auto">
+      <div
+        class=" lg:p-0  my-10 rounded-3xl
+        text-center px-2">
+        <div class="grid lg:grid-cols-2 flex lg:pl-0 items-center md:px-6">
+          <div
+            class="embed-responsive embed-responsive-4by3 relative w-full
+            overflow-hidden"
+            style="padding-top: 57%">
+            <iframe
+              class="embed-responsive-item absolute top-0 right-0 bottom-0
+              left-0 w-full h-full"
+              src="https://player.vimeo.com/video/472521549"
+              allowfullscreen=""
+              data-gtm-yt-inspected-2340190_699="true"
+              id="240632615"></iframe>
+          </div>
+
+          <div class="">
+          <div class="bg-gray-800 px-12 py-2 rounded-r-3xl text-start text-white">
+            <h1
+              class="py-2 text-orange-400 tracking-wide font-bold md:text-3xl
+              text-xl">
+              Why Digital Ranking?
+            </h1>
+            <p class="md:text-base text-sm text-gray-200">
+              CheckBrand Digital Ranking is like your portfolio in the digital
+              space. An in-depth assessment of your brand will identify your
+              weaknesses and strengths. CheckBrand discovers favorable
+              opportunities without interruption to give the best for the brand.
+              As our product is unique it develops a healthy competition between
+              the brands for boosting their presence on the web. Our Digital
+              Ranking is the assessment of, search engine scores, sentimental
+              analysis, social media platforms, and many more factors.
+            </p>
+            <button
+              class="my-4 text-white bg-orange-500 px-8 py-2 font-bold
+              rounded-full">
+              Explore More
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Based Section -->
+
+    <section class="px-2">
+      <div class="container mx-auto py-12">
+        <div class="grid lg:grid-cols-2 flex">
+          <div class="bg-orange-200 rounded-xl px-8 py-8">
+            <h4 class="text-red-500 pb-4 text-xl">AI-Based trend</h4>
+            <h1 class="text-2xl mr-12">
+              Our AI-based tool accumulates data from all over the web whether
+              it is Google trends, searches, social media platforms such as
+              Twitter, Facebook, Instagram, etc.
+            </h1>
+            <div class="grid lg:grid-cols-3">
+              <ul class="flex flex-col space-y-4 tracking-wider py-8">
+                <li>
+                  Social Media<i class="fas fa-long-arrow-alt-right pl-2"></i>
+                </li>
+                <li>
+                  online News<i class="fas fa-long-arrow-alt-right pl-2"></i>
+                </li>
+                <li>
+                  Fake News<i class="fas fa-long-arrow-alt-right pl-2"></i>
+                </li>
+                <li>Trends<i class="fas fa-long-arrow-alt-right pl-2"></i></li>
+              </ul>
+              <ul class="flex flex-col space-y-4 tracking-wider py-8">
+                <li>
+                  Print Media<i class="fas fa-long-arrow-alt-right pl-2"></i>
+                </li>
+                <li>Padcast<i class="fas fa-long-arrow-alt-right pl-2"></i></li>
+                <li>Icons<i class="fas fa-long-arrow-alt-right pl-2"></i></li>
+                <li>
+                  AI Tools<i class="fas fa-long-arrow-alt-right pl-2"></i>
+                </li>
+              </ul>
+              <ul class="flex flex-col space-y-4 tracking-wider py-8">
+                <li>
+                  Broadcast<i class="fas fa-long-arrow-alt-right pl-2"></i>
+                </li>
+                <li>
+                  Search Engines<i class="fas fa-long-arrow-alt-right pl-2"></i>
+                </li>
+                <li>Blogs<i class="fas fa-long-arrow-alt-right pl-2"></i></li>
+                <li>Videos<i class="fas fa-long-arrow-alt-right pl-2"></i></li>
+              </ul>
+            </div>
+            <div class="text-right">
+              <button class="text-white px-8 bg-orange-300 rounded-lg py-1">
+                Digital Ranking
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="lg:-left-8 py-3 relative rounded-3xl max-w-[36rem]
+            text-center">
+            <img src="/images/image1.jpg" alt="" class="rounded-3xl" />
+            <h1 class="text-xl pl-10 text-center text-white">
+              Monitor the trending topics, hashtags and more from various social
+              media platforms.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section - Normal  -->
+
+    <section
+      class="bg-[#323741] m-[100px 0 100px] p-[100px 0] bg-[rgba(30, 40, 60,
+      0.89)]">
+      <div class="container max-w-[1160px] mx-auto py-20 text-center">
+        <h1 class="text-3xl text-orange-400 font-semibold pb-8 tracking-wider">
+          Competitive Intelligence
+        </h1>
+        <p class="text-white">
+          Our Competitive Intelligence involves collecting and analysing
+          information about the key competitors of the brand through hashtags,
+          engagement, mentions sentiment analysis, etc. We compare brands in
+          different niches. To present information in the most thorough way
+          possible when it comes to reporting on competitive intelligence, we
+          use a few categories.
+        </p>
+        <ul
+          class="flex justify-center list-disc marker:text-orange-600
+          list-inside py-6 space-x-6 text-white flex-wrap">
+          <li class="">Competitor Shifts</li>
+          <li>Hashtags</li>
+          <li>Media Mentions</li>
+          <li>Event News</li>
+          <li>Social Media Review</li>
+          <li>Online News Mentions</li>
+        </ul>
+        <div class="py-4">
+          <a
+            href="/#"
+            class="text-white bg-transparent hover:bg-orange-500 border
+            border-slate-200 px-8 py-2 rounded-3xl">Request Your Own Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Management -->
+
+    <section class="container mx-auto">
+      <div
+        class="  my-24 rounded-3xl
+        text-center px-2 ">
+        <div class="grid lg:grid-cols-2 flex lg:pl-0 items-center md:px-6
+          rounded-3xl">
+          <img src="/images/brandmanagement.jpg" alt="" class="z-10" />
+          <div
+            class="bg-gray-800  px-12 py-10 rounded-r-3xl
+            text-start text-white">
+            <h1
+              class="py-2 text-orange-400 tracking-wide font-bold md:text-3xl
+              text-xl">
+              Brand Management
+            </h1>
+            <p class="md:text-base text-sm text-gray-200">
+              We at CheckBrand classify, monitor, and ameliorate your brand. To
+              boost the perceived worth of a brand or service, we employ a
+              variety of our own in-built strategies. Brand Management is
+              required as a Brand/Product must be able to exert influence over
+              the public's perception of it in a world where users make
+              decisions about it within the span of one blink of an eye fixed.
+              In fact, the success or failure of many brands depends purely on
+              how well it's presented online which is where CheckBrand plays a
+              crucial role.
+            </p>
+            <button
+              class="my-4 text-white bg-orange-500 px-8 py-2 font-bold
+              rounded-xl">
+              Brand online Presence
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campaign Strategy -->
+
+    <section class="bg-slate-800 py-10 ">
+      <div class="container mx-auto">
+      <div class=" lg:p-0  my-10 rounded-3xl text-center px-2">
+        <h1 class="lg:text-3xl text-white tracking-wide font-semibold py-16">
+          We Track and Analyse top Influencers in India and across the world.
+          Assisting Influencers to achieve the maximum impact in the Digital
+          Space.
+        </h1>
+        <div
+          class="grid lg:grid-cols-2 flex lg:pl-0  md:px-6
+          rounded-xl bg-gray-700 py-10 m-8">
+          <div class="pl-8 text-start">
+            <h3 class="text-orange-400 text-2xl font-bold text-start"><i class="far fa-compass pr-2"></i>Campaign Strategy</h3>
+            <p class="text-start text-lg text-white pr-12 my-8 font-medium tracking-wide">Our AI tool works on the algorithms and takes out the Digital score, Brand Value, and Online Reputation Management of a Brand. As a campaign strategy, CheckBrand offers a framework for a Brand's marketing initiatives. We provide a logical flow to follow to ensure that you utilise our AI tool and focus on the digital marketing channels that are appropriate for you. We also keep your efforts on track during the execution and implementation phases.</p>
+            <a href="/#" class="text-start bg-transparent px-4 py-1 border border-gray-500 text-white font-medium">How we work!</a>
+          </div>
+          
+            <img
+              src="/images/campaignstrategy.jpg"
+              alt=" "
+              class="rounded-lg w-full"
+              />
+         
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Card Slider -->
+
+
+    <section class="py-20 container mx-auto">
+      <div class="text-center">
+        <h2 class="text-orange-500 tracking-wider text-3xl font-semibold">
+          IN THE NEWS
+        </h2>
+        <p class="text-white">(Our Editorials)</p>
+
+        <div class="py-6 gap-4">
+          <div
+            class="splide"
+            role="group"
+            aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="flex justify-center">
+                    <div
+                      class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+                      overflow-hidden bg-no-repeat bg-cover">
+                      <a href="#!">
+                        <img
+                          class="rounded-t-lg"
+                          src="/images/16742023847255.jpg"
+                          alt=""
+                          />
+                      </a>
+                      <div class="p-6 text-white">
+                        <h5 class="text-xl font-medium mb-2">
+                          Indian Women's Cricket Team Wins First
+                        </h5>
+                        <p class="text-gray-500 py-2">
+                          Indian Women's Cricket Team Wins First......
+                        </p>
+
+                        <div class="flex justify-between pt-2">
+                          <div
+                            class="text-white bg-orange-500 px-1 py-1
+                            rounded-lg">
+                            <span class="capitalize">
+                              <i class="far fa-clock pr-2"> </i>Jan 20,
+                              2023</span>
+                          </div>
+                          <div class="space-x-2 text-sm">
+                            <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                            <i class="fa-solid fa-thumbs-down"><span
+                                class="px-2">0</span></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="flex justify-center">
+                    <div
+                      class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+                      overflow-hidden bg-no-repeat bg-cover">
+                      <a href="#!">
+                        <img
+                          class="rounded-t-lg"
+                          src="/images/16742023847255.jpg"
+                          alt=""
+                          />
+                      </a>
+                      <div class="p-6 text-white">
+                        <h5 class="text-xl font-medium mb-2">
+                          Indian Women's Cricket Team Wins First
+                        </h5>
+                        <p class="text-gray-500 py-2">
+                          Indian Women's Cricket Team Wins First......
+                        </p>
+
+                        <div class="flex justify-between pt-2">
+                          <div
+                            class="text-white bg-orange-500 px-1 py-1
+                            rounded-lg">
+                            <span class="capitalize">
+                              <i class="far fa-clock pr-2"> </i>Jan 20,
+                              2023</span>
+                          </div>
+                          <div class="space-x-2 text-sm">
+                            <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                            <i class="fa-solid fa-thumbs-down"><span
+                                class="px-2">0</span></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="flex justify-center">
+                    <div
+                      class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+                      overflow-hidden bg-no-repeat bg-cover">
+                      <a href="#!">
+                        <img
+                          class="rounded-t-lg"
+                          src="/images/16742023847255.jpg"
+                          alt=""
+                          />
+                      </a>
+                      <div class="p-6 text-white">
+                        <h5 class="text-xl font-medium mb-2">
+                          Indian Women's Cricket Team Wins First
+                        </h5>
+                        <p class="text-gray-500 py-2">
+                          Indian Women's Cricket Team Wins First......
+                        </p>
+
+                        <div class="flex justify-between pt-2">
+                          <div
+                            class="text-white bg-orange-500 px-1 py-1
+                            rounded-lg">
+                            <span class="capitalize">
+                              <i class="far fa-clock pr-2"> </i>Jan 20,
+                              2023</span>
+                          </div>
+                          <div class="space-x-2 text-sm">
+                            <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                            <i class="fa-solid fa-thumbs-down"><span
+                                class="px-2">0</span></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="flex justify-center">
+                    <div
+                      class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+                      overflow-hidden bg-no-repeat bg-cover">
+                      <a href="#!">
+                        <img
+                          class="rounded-t-lg"
+                          src="/images/16742023847255.jpg"
+                          alt=""
+                          />
+                      </a>
+                      <div class="p-6 text-white">
+                        <h5 class="text-xl font-medium mb-2">
+                          Indian Women's Cricket Team Wins First
+                        </h5>
+                        <p class="text-gray-500 py-2">
+                          Indian Women's Cricket Team Wins First......
+                        </p>
+
+                        <div class="flex justify-between pt-2">
+                          <div
+                            class="text-white bg-orange-500 px-1 py-1
+                            rounded-lg">
+                            <span class="capitalize">
+                              <i class="far fa-clock pr-2"> </i>Jan 20,
+                              2023</span>
+                          </div>
+                          <div class="space-x-2 text-sm">
+                            <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                            <i class="fa-solid fa-thumbs-down"><span
+                                class="px-2">0</span></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="flex justify-center">
+                    <div
+                      class="rounded-lg shadow-lg bg-gray-800 max-w-sm relative
+                      overflow-hidden bg-no-repeat bg-cover">
+                      <a href="#!">
+                        <img
+                          class="rounded-t-lg"
+                          src="/images/16742023847255.jpg"
+                          alt=""
+                          />
+                      </a>
+                      <div class="p-6 text-white">
+                        <h5 class="text-xl font-medium mb-2">
+                          Indian Women's Cricket Team Wins First
+                        </h5>
+                        <p class="text-gray-500 py-2">
+                          Indian Women's Cricket Team Wins First......
+                        </p>
+
+                        <div class="flex justify-between pt-2">
+                          <div
+                            class="text-white bg-orange-500 px-1 py-1
+                            rounded-lg">
+                            <span class="capitalize">
+                              <i class="far fa-clock pr-2"> </i>Jan 20,
+                              2023</span>
+                          </div>
+                          <div class="space-x-2 text-sm">
+                            <i class="fa-solid fa-thumbs-up"><span class="px-2">5</span></i>
+                            <i class="fa-solid fa-thumbs-down"><span
+                                class="px-2">0</span></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Form -->
+
+    <section>
+      <div class="container mx-auto lg:ml-[14%] py-20">
+        <div>
+          <div class="grid lg:grid-cols-2">
+            <div class="text-white px-14 py-14 bg-slate-800">
+              <h5
+                class="text-orange-400 tracking-wider lg:text-xl font-semibold
+                py-4">
+                REGISTER FOR A FREE ACCOUNT
+              </h5>
+              <h3 class="lg:text-3xl font-semibold">
+                Discover how CheckBrand can assist your Digital Image
+              </h3>
+              <ul
+                class="flex flex-col list-disc list-inside p-6 lg:text-lg
+                space-y-4 tracking-wider">
+                <li>Track & Boost Your Online Reputation</li>
+                <li>Build a favourable digital presence</li>
+                <li>Comparison with other brands</li>
+                <li>Digital Rankings to empower your Brands</li>
+                <li>Enhance your Digital Reach</li>
+              </ul>
+            </div>
+            <div class="lg:max-w-[44.6%] max-w-[60.6%] grid place-item-center">
+              <form
+                action=""
+                class="flex flex-col justify-center bg-white text-center py-6
+                px-6 space-y-4 rounded-lg">
+                <a href="/#" class="items-center"><img
+                    class="hidden h-8 w-auto lg:block"
+                    src="images/logo_header-old.png"
+                    alt="Your Company"
+                    /></a>
+                <input
+                  type="text"
+                  name=""
+                  value=""
+                  placeholder="Name"
+                  class="w-100 rounded-full border-2 px-4 py-1"
+                  />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="w-100 rounded-full border-2 px-4 py-1"
+                  />
+                <input
+                  type="text"
+                  placeholder="Password"
+                  class="w-100 rounded-full border-2 px-4 py-1"
+                  />
+                <input
+                  type="text"
+                  placeholder="Confirm password"
+                  class="w-100 rounded-full border-2 px-4 py-1"
+                  />
+
+                <label for="" class="text-slate-400">By continuing, you agree to
+                  the<a
+                    href="/#"
+                    class="text-blue-500">
+                    Terms of Use.</a></label>
+                <button
+                  class="w-100 rounded-full bg-orange-600 text-white py-2
+                  hover:bg-gray-700">
+                  CREATE ACCOUNT
+                </button>
+                <div class="flex items-center justify-center space-x-2">
+                  <hr class="border-slate-300 border w-40" />
+                  <h6 class="text-slate-300">Or</h6>
+                  <hr class="border-slate-300 border w-40" />
+                </div>
+                <div class="py-2">
+                  <h3 class="text-slate-300">Register With</h3>
+                  <ul class="flex justify-center space-x-4 py-2 cursor-pointer">
+                    <li><i class="fa-brands fa-facebook-f text-3xl"></i></li>
+                    <li><i class="fab fa-google text-3xl"></i></li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo  Carousel  -->
+
+    <section class="bg-gray-800 py-20">
+      <div class="container mx-auto">
+        <div class="text-3xl text-center text-gray-400 font-bold tracking-wide">
+          <h2>
+            Assisting Influencers achieve the
+            <br />
+            maximum impact in the Digital Space
+          </h2>
+        </div>
+
+        <div class="py-10">
+
+          <div
+            class="splide logo"
+            id="splide"
+            role="group"
+            aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="/images/nec.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/images/samsung.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/images/intel.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/images/cisco.jpg" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="/images/hp.jpg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+
+    <footer class="py-10 my-10 mx-5 bg-black rounded-xl">
+      <div class="first">
+        <div class="container mx-auto">
+          <div class="grid lg:grid-cols-3 py-10">
+            <div class="flex lg:justify-end ">
+              <img src="/images/logo.png" alt="" class="w-34" />
+            </div>
+            <div class="col-span-2 text-white px-4">
+              <p>
+                CheckBrand is the only platform to track your digital ranking,
+                digital presence, and social media presence along with detailed
+                analytics reports by which you can measure all the parameters of
+                a digital domain.
+              </p>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-4">
+            <div class="text-white flex">
+              <ul class="flex flex-col cursor-pointer font-semibold space-y-2">
+                <li class="hover:underline">Home</li>
+                <li class="hover:underline">TOP 100</li>
+                <li class="hover:underline">Trends</li>
+                <li class="hover:underline">Google Search</li>
+                <li class="hover:underline">Top Wiki</li>
+              </ul>
+              <ul class="ml-6 flex flex-col cursor-pointer font-semibold space-y-2">
+                <li class="hover:underline">Price</li>
+                <li class="hover:underline">Register Your Brand</li>
+                <li class="hover:underline">Top News</li>
+                <li class="hover:underline">Top 500</li>
+                <li class="hover:underline">Contact Us</li>
+              </ul>
+            </div>
+            <div class="text-white w-full px-2 py-6">
+              <h1 class="tracking-wider font-semibold py-3">SUBSCRIPTION</h1>
+              <form action="">
+                <div class="flex flex-row">
+                  <input
+                    type="text"
+                    placeholder="Enter your email"
+                    class="w-full py-2 px-2 rounded-full w-full"
+                    />
+                  <span>
+                    <button class="bg-orange-500 py-2 px-2 rounded-full -ml-10">
+                      Subscribe
+                    </button></span>
+                </div>
+              </form>
+            </div>
+            <div class="w-14 m-5">
+              <h2 class="text-white font-semibold pb-2">LIKE</h2>
+              <div>
+                <div class="text-xs text-black bg-white p-0\.5 text-center">
+                  17k
+                </div>
+                <div class="text-xs text-white bg-blue-500 rounded-sm p-0\.5">
+                  <button
+                    type="button"
+                    class="inline-block font-medium text-xs leading-tight
+                    capitalize transition duration-150 ease-in-out">
+                    <i class="fa-solid fa-thumbs-up pl-1"></i> Follow
+                  </button>
+                </div>
+                <div
+                  class="text-xs text-white bg-blue-500 p-0\.5 my-2 rounded-sm
+                  text-center">
+                  <button
+                    type="button"
+                    class="inline-block font-medium text-xs leading-tight
+                    capitalize transition duration-150 ease-in-out">
+                    Share
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-white text-lg tracking-wider py-3">FOLLOW US</h2>
+              <ul class="flex lg:flex-row  space-x-2 text-lg">
+                <li class="text-black bg-white rounded-full px-3 py-1">
+                  <i class="fa fa-facebook-f"></i>
+                </li>
+                <li class="text-black bg-white rounded-full px-2 py-1">
+                  <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li class="text-black bg-white rounded-full px-2 py-1">
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li class="text-black bg-white rounded-full px-2 py-1">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </li>
+                <li class="text-black bg-white rounded-full px-2 py-1">
+                  <i class="fa-brands fa-youtube"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-700 border-t" />
+      </div>
+
+      <div class="middle text-white text-center text-sm">
+        <div class="container mx-auto tracking-wider leading-7">
+          <a href="/#" class="px-2 border-gray-700 border-r">Product Launch</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Share of Voice</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Media Monitoring</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">AI-Based Sentiment Analysis</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Social Listening</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">ORM</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Market Research</a>
+          <br>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Monitor the Market and Trends</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Gather Audience Insights</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Analytics</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Social Media Reports</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Media Monitoring</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Digital Survey</a>
+          <br>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Digital Research</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Alerting</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Competitive Intelligence</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Trend Analysis</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Sales Intelligence</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Market Intelligence</a>
+          <a href="/#" class="border-gray-700 border-r px-2 ">Brand Management</a>
+          <br>
+          <a href="/#" class="border-gray-700 border-r pr-2">Branding Campaign</a>
+          <a href="/#" class="border-gray-700 border-r pr-2">PR Reporting</a>
+          <a href="/#" class="border-gray-700 border-r pr-2">Campaign Management</a>
+          <a href="/#" class="border-gray-700 border-r pr-2">In Media</a>
+
+
+          
+          
+          
+          
+        </div>
+        <hr class="mt-6 border-gray-700 border-t" />
+
+      </div>
+
+      <div class="bottom">
+        <div class="container mx-auto my-2">
+          <div class="grid lg:grid-cols-2">
+            <div class="text-white text-xs space-x-2 items-center flex flex-wrap"> 
+              CheckBrand © 2020
+              <a href="/#" class="pl-2">About</a>
+              <a href="/#">Privacy Policy</a>
+              <a href="/#">Cookie Policy</a>
+              <a href="/#">Terms of Use</a>
+              <a href="/#">Disclaimer</a>
+              <a href="/#">F.A.Q.</a>
+              <a href="/#">BLOGS</a>
+
+
+            </div>
+            <div class="text-white text-xs flex justify-between items-center">
+              <img src="/images/logo_footer.png" class="w-28 hidden lg:block" alt="">
+              <span>Powered by <a href="/#">ADG Online Solutions </a></span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <script>
+      var splide = new Splide(".splide", {
+        type: "loop",
+        arrows: (boolean = false),
+        pagination: (boolean = false),
+        perPage: 4,
+        breakpoints: {
+		      820: {
+			      perPage: 2,
+		        },
+          400: {
+			      perPage: 1,
+		        },  
+          
+          },
+        perMove: 1,
+        gap: "2rem",
+        autoplay: true,
+        speed: (number = 1000),
+      });
+
+      splide.mount();
+
+      var splid = new Splide("#splide", {
+        type: "loop",
+        arrows: (boolean = true),
+        pagination: (boolean = false),
+        perPage: 5,
+        padding: { left: '-2rem', right: '-2rem' },
+        breakpoints: {
+		      820: {
+			      perPage: 3,
+		        },
+          400: {
+			      perPage: 2,
+		        },  
+          },
+        perMove: 1,
+        gap: "1rem",
+        autoplay: true,
+        speed: (number = 1000),
+      });
+      splid.mount();
+    </script>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+
+
+    <script>
+
+     
+      function add(){
+       var a = '<div class="relative" id="row"><input type="text" placeholder="Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  "><button id="DeleteRow" class="rounded-full text-white bg-orange-500 w-9 h-9 absolute left-[310px] mt-0.5"><i class="fa-solid fa-trash text-xs"></i></button> </div>';
+       $("#new_input").append(a);
+        
+      }
+      $("body").on("click", "#DeleteRow", function () {
+            $(this).parents("#row").remove();
+        })
+     
+    </script>
+
+
+<!-- flowbit javacript link for toggle-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.js" integrity="sha512-J7uKR69aZGGGVlt2wkk/bG6XKOsiRE35PE/vU+aau44g3f5bQqGoW7tKe4LKhVI57etFJOYwy/F/vCYTweELIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News_more</title>
+    <link rel="stylesheet" href="./styles.css" />
+        <!-- tailwind cdn -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+            />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+        <!-- Font Awesome link-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/yourcode.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- slider -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+
+
+        <!-- Tailwind configuration -->
+        <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          padding: {
+            DEFAULT: "1rem",
+            sm: "2rem",
+            lg: "4rem",
+            xl: "9rem",
+            "2xl": "7rem",
+          },
+        },
+        extend: {},
+      },
+    };
+  </script>
+</head>
+<body class="bg-gray-900">
+    <!-- Navbar -->
+
+    <nav class="bg-gray-800 ">
+        <div class="px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-20 items-center justify-between">
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch
+              sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img
+                  class="hidden h-14 w-auto lg:block"
+                  src="images/logo.png"
+                  alt="Your Company"
+                  />
+                <div class="sm:ml-6 sm:block">
+                  <div class="flex items-center space-x-4">
+                    <a href="#" aria-current="page"><button
+                        class="bg-orange-500 py-2 px-4 text-white rounded-full
+                        hover:bg-white hover:text-black">
+                        Register Your Brand
+                      </button></a>
+                    <a href="#" aria-current="page"><button
+                        class="font-bold border border-white rounded-full py-2
+                        px-6 text-white rounded-full hover:bg-white
+                        hover:text-black mr-5">
+                        Live
+                      </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static
+              sm:inset-auto sm:ml-6 sm:pr-0 space-x-5">
+              <a href="#" aria-current="page"><button
+                  class="hidden md:block bg-orange-500 py-2 px-4 text-white
+                  rounded-full hover:bg-white hover:text-black">
+                  FREE DEMO
+                </button></a>
+                <a
+                href="#"
+                aria-current="page"
+                class="hidden md:block text-white rounded-full hover:bg-white
+                text-xl hover:text-black border-white border w-9 h-9 px-1.5 py-1"><i
+                  class="fa fa-sign-in"></i></a>
+                  <a
+                  href="#"
+                  aria-current="page"
+                  class="hidden md:block text-xl text-white rounded-full
+                  hover:bg-white hover:text-black border-white border w-9 h-9 px-1.5 py-1"><i
+                    class="fa fa-search"></i></a>
+              <a
+                href="#"
+                aria-current="page"
+                class="text-white text-2xl rounded-full hover:bg-orange-500
+                hover:text-black py-1 px-2 pr-3"><i class="fa fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- News Section -->
+
+    <div class="container mx-auto mt-28">
+        <div class="grid grid-cols-4">
+            <div class="col-span-3 bg-[#323741] rounded-3xl">
+                <div class="news-list p-9">
+                    <div class="news1">
+                        <div class="relative"><img src="https://checkbrand.online/uploads/topics/16749107533832.jpg" alt="" class="rounded-3xl h-[500px] w-full">
+                        <h5 class="text-white py-2 px-3 bg-orange-400 rounded-r-xl w-16 absolute top-0 mt-6">News</h5>
+                        <div class="absolute bg-orange-500 bottom-0 mb-9 ml-9 py-5 rounded-3xl text-center text-white w-[115px]">
+                            <h2 class="font-bold text-4xl">16</h2>
+                            <span class="font-bold text-lg">JAN</span>
+                        </div>
+                        </div>
+                        <div class="flex justify-between text-white my-5 items-center">
+                            <div class="flex text-sm items-center">
+                                <a href="/#" class="text-xs text-blue-500 tracking-widest font-medium">NEWS</a>
+                                <span class="px-3">|</span>
+                                <h5 class="tracking-wider font-medium">Reading Time: <span class="font-normal">2 minutes 30 seconds</span></h5>
+                                <span class="px-3">|</span>
+                                <p><i class="fa-solid fa-pencil text-orange-400"></i> by Admin</p>
+                            </div>
+                            <ul class="flex space-x-6 mr-6">
+                                <li><i class="fa-solid fa-heart pr-1 text-orange-400"></i>0</li>
+                                <li><i class="fa-solid fa-comment pr-1 text-orange-400"></i>0</li>
+                                <li><i class="fa-solid fa-eye pr-1 text-orange-400"></i>29</li>
+                                <li><i class="fa-solid fa-thumbs-up pr-1 text-orange-400"></i>0</li>
+                                <li><i class="fa-solid fa-thumbs-down pr-1 text-orange-400"></i>0</li>
+                            </ul>
+                        </div>
+                        <hr class="border-slate-700">
+                        <h2 class="my-4">
+                            <a href="/#" class="capitalize text-3xl text-orange-400 font-semibold tracking-wide ">AIR FORCE FIGHTER PLANES CRASHED IN MADHYA PRADESH, 1 PILOT DEAD, AND DIGITAL AUDIENCE STUNNED WITH 99.2% NEGATIVE SENTIMENTS.</a>
+                        </h2>
+                        <p class="my-6 text-white text-lg tracking-wider">Two Indian Air Force fighter planes crash in Madhya Pradesh, killing one pilot. On Saturday, the Indian Air Force tweeted, "Two Indian Air Force fighter planes were engaged in an accident near Gwalior this morning. The plane was on a typical operational flight training assignment." "One of the three pilots involved died as a result of his injuries. An investigation has been launched to investigate the cause of the accident "It went on to say.</p>
+                        <p class="my-6 text-white text-lg tracking-wider">CheckBrand calculated the impact of the devastating news on online audiences since the crash has been happened in Madhya Pradesh. CheckBrand evaluated that the news garnered <span class="font-bold">6.2K digital engagements.</span>The incident received <span class="font-bold">99.2% negative sentiments</span> and 0% of positive sentiments of audience, with a total search engine score of <span class="font-bold">2150</span>.</p>
+                        <p class="my-6 text-white text-lg tracking-wider"><img src="https://checkbrand.online/uploads/topics/1674910629603227480.png" alt=""></p>
+                        <p class="my-6 text-white text-lg tracking-wider">*Sources Google Trend</p>
+                        <p class="my-6 text-white text-lg tracking-wider">The aircraft were on routine operational flying training mission. One of the 3 pilots involved, sustained fatal injuries. An inquiry has been ordered to determine the cause of the accident.</p>
+                        <p class="my-6 text-blue-600 hover:text-purple-500 text-lg tracking-wider"><a href="/#" class="">https://twitter.com/ANI/status/1619242364584992768</a></p>
+                        <p class="my-6 text-white text-lg tracking-wider">The Indian Air Force has extended its heartfelt sympathies to the pilot's family and is offering help of every kind.</p>
+                        <p class="my-6 text-white text-lg tracking-wider">The pilots' identities have not been revealed. The crash's cause is being investigated. The IAF has launched an investigation to ascertain the cause of the tragedy. In the meanwhile, all flying activities around the accident scene have been halted.</p>
+                        <p class="my-6 text-white text-lg tracking-wider">All three pilots have been taken to Gwalior's military hospital for medical treatment. Unfortunately, one of the pilots died as a result of his injuries. The IAF extends its heartfelt condolences to the lost pilot's family.</p>
+                        <p class="my-6 text-white text-lg tracking-wider">The IAF has launched an investigation to ascertain the cause of the tragedy and is anticipated to involve a study of the wreckage, analysis of telemetry data, and interviews with accident personnel and witnesses.</p>
+                        <p class="my-6 text-white text-lg tracking-wider"><img src="https://checkbrand.online/uploads/topics/16749106291940204818.png" alt="">The findings of the investigation will be used to determine the cause of the accident and to recommend ways to avoid such accidents in the future.</p>
+                        <p class="my-6 text-white text-lg tracking-wider"></p>
+                        <p class="my-6 text-white text-lg tracking-wider"></p>
+                        <p class="my-6 text-white text-lg tracking-wider"></p>
+                        <div class="flex justify-between mt-36 text-white items-center mb-8">
+                            <ul class="flex space-x-4 mr-6">
+                                <li class="font-semibold">January 28, 2023</li>
+                                <li><i class="fa-solid fa-heart pr-1 text-orange-400"></i>0</li>
+                                <li><i class="fa-solid fa-comment pr-1 text-orange-400"></i>0</li>
+                                <li><i class="fa-solid fa-eye pr-1 text-orange-400"></i>29</li>
+                                <li><i class="fa-solid fa-thumbs-up pr-1 text-orange-400"></i>0</li>
+                                <li><i class="fa-solid fa-thumbs-down pr-1 text-orange-400"></i>0</li>
+                            </ul>
+                            <ul class="flex space-x-2">
+                                <li class="bg-blue-800 hover:bg-red-700 px-4 py-2 rounded-full text-white"><i class="fa-brands fa-facebook-f"></i></li>
+                                <li class="bg-sky-400 hover:bg-red-700 px-3 py-2 rounded-full text-white"><i class="fa-brands fa-twitter"></i></li>
+                                <li class="bg-cyan-600 hover:bg-red-700 px-3.5 py-2 rounded-full text-white"><i class="fa-brands fa-linkedin-in"></i></li>
+                                <li class="bg-red-700 hover:bg-red-700 px-3 py-2 rounded-full text-white"><i class="fa-brands fa-reddit-alien"></i></i></li>
+                                <li class="bg-green-800 hover:bg-red-700 px-3 py-2 rounded-full text-white"><i class="fa-brands fa-whatsapp"></i></li>
+                                <li class="bg-sky-900 hover:bg-red-700 px-3 py-2 rounded-full text-white"><i class="fa-regular fa-envelope"></i></li>
+                            </ul>
+                        </div>
+                        <hr class="border-slate-700">
+
+                        <div class="my-5">
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400 inline-block capitalize">madhya_pradesh</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400 inline-block capitalize">iaf</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400 inline-block capitalize">crash</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400 inline-block capitalize">jet_fighter</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400 inline-block capitalize">gwalior</a>
+                        </div>
+
+                        <hr class="border-slate-700 ">
+
+                        <div class="mt-4 ">
+                            <h3 class="text-xl uppercase text-white">Related Posts</h3>
+                            <div class="splide mt-2" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                      <ul class="splide__list">
+                                          <li class="splide__slide">
+                                            <div>
+                                                <img src="https://checkbrand.online/uploads/topics/16739603935063.jpg" alt="">
+                                                <h3 class="text-white text-lg uppercase pt-1.5">"Pegasus, Rafale, ED, Central...</h3>
+                                                <p class="py-1.5 text-md text-orange-400 opacity-80">17, Jan 2023</p>
+                                            </div>
+                                            
+                                          </li>
+                                          <li class="splide__slide"><div>
+                                            <img src="https://checkbrand.online/uploads/topics/16739603935063.jpg" alt="">
+                                            <h3 class="text-white text-lg uppercase pt-1.5">"Pegasus, Rafale, ED, Central...</h3>
+                                            <p class="py-1.5 text-md text-orange-400 opacity-80">17, Jan 2023</p>
+                                        </div></li>
+                                          <li class="splide__slide"><div>
+                                            <img src="https://checkbrand.online/uploads/topics/16739603935063.jpg" alt="">
+                                            <h3 class="text-white text-lg uppercase pt-1.5">"Pegasus, Rafale, ED, Central...</h3>
+                                            <p class="py-1.5 text-md text-orange-400 opacity-80">17, Jan 2023</p>
+                                        </div></li>
+                                      </ul>
+                                </div>
+                              </div>
+
+                        </div>
+
+                        <hr class="border-slate-700 mt-10 mb-6">
+                        <h3 class="text-xl uppercase text-white">comment</h3>
+                        <hr class="border-slate-700 my-6">
+
+                        <div>
+                        <h3 class="text-xl uppercase text-white mb-2">post a comment</h3>
+                        <form action="" class="">
+                            <textarea name="comment" id="" cols="45" rows="15" placeholder="Write your comment here..." class="w-full bg-transparent outline-1 outline outline-gray-500 p-3 text-sm text-white rounded-lg"></textarea>
+                            <div class="pt-3">
+                                <div class="grid grid-cols-3 gap-x-4">
+                                    <input type="text" class="bg-transparent text-sm outline-1 outline outline-gray-500 text-white py-3 pl-7 rounded-lg" placeholder="Your full name">
+                                    <input type="text" class="bg-transparent text-sm outline-1 outline outline-gray-500 text-white  py-3 pl-7 rounded-lg" placeholder="E-mail address">
+                                    <input type="text" class="bg-transparent text-sm outline-1 outline outline-gray-500 text-white  py-3 pl-7 rounded-lg" placeholder="Website">
+
+                                </div>
+                            </div>
+                            <p class="text-white text-lg my-5 tracking-wide">
+                                <input type="checkbox">
+                                <label for="">Save my name, email, and website in this browser for the next time I comment.</label>
+                            </p>
+
+                            <p class="text-right"><button type="submit" class="uppercase text-white px-12 py-3 bg-orange-500  font-medium mt-5">Submit</button></p>
+                        </form>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-content ">
+                <div class="mt-10 bg-[#3b414c] rounded-r-3xl">
+                    <div class="p-6">
+                        <form class="flex items-center">   
+                            <div class="relative w-full">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <i class="fa-search fas text-white"></i>
+                                </div>
+                                <input type="text" class="focus:border-gray-700 bg-transparent block border-2 text-gray-400 border-gray-500 p-2.5 pl-10 rounded-md w-full" placeholder="Search" required="">
+                            </div>                  
+                        </form>
+
+                        <h3 class="text-orange-400 font-semibold tracking-wider my-4 text-xl">CATEGORIES</h3>
+                        <ul class="text-white  tracking-wide">
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Digital Marketing</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Marketing</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Entertainment</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Medical</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Science and Technology</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Politics</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Sports</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Environment</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Campaign</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Interview</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Viral</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">What's Trending</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Trending News</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Viral Videos</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Youtube Trends</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Social Media Ranking</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Twitter Trends</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Google Trends</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Top Politicians</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Top Cricketers</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Top Influencers</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Best Campaigns</a></li>
+                            <li class="py-2 border-b border-gray-800 hover:text-orange-400"><a href="">Google News</a></li>
+                            <li class="py-2  hover:text-orange-400"><a href="">News</a></li>
+                        </ul>
+
+                        <div class="mt-6">
+                            <ul class="flex flex-wrap list-none nav nav-pills pl-0  text-white space-x-2" id="pills-tab" role="tablist">
+                                <li class="nav-item " role="presentation">
+                                  <a href="#pills-recent" class="block focus:outline-none focus:ring-0  hover:bg-orange-500 leading-tight link px-5 font-md py-2 font-semibold rounded-full active" id="pills-recent-tab" data-bs-toggle="pill" data-bs-target="#pills-recent" role="tab" aria-controls="pills-recent" aria-selected="true">TRENDING</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <a href="#pills-most" class="block focus:outline-none focus:ring-0 hover:bg-orange-500 leading-tight link px-4 font-md py-2  font-semibold   rounded-full" id="pills-most-tab" data-bs-toggle="pill" data-bs-target="#pills-most" role="tab" aria-controls="pills-most" aria-selected="false">MOST VIEWED</a>
+                                </li>
+                                </ul>
+                                <div class="tab-content text-white mt-5 " id="pills-tabContent">
+                                    <div class="tab-pane fade show active pb-5" id="pills-recent" role="tabpanel" aria-labelledby="pills-recent-tab">
+                                        <div class="grid grid-cols-3">
+                                            <div class="">
+                                                <img src="https://checkbrand.online/uploads/topics/16081250848815.jpg" alt="" class="rounded-lg h-full">
+                                            </div>
+                                            <div class="col-span-2 pl-2">
+                                                <p class="text-orange-400"><i class="fas fa-calendar-alt px-1"></i>DEC 16, 2020</p>
+                                                <h6 class="font-semibold hover:text-orange-400"><a href="/#">#Skillhaitohfuturehai: Mahindra's Flagsh...</a></h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="grid grid-cols-3 mt-8">
+                                            <div class="">
+                                                <img src="https://checkbrand.online/uploads/topics/16118992651520.jpeg" alt="" class="rounded-lg h-full">
+                                            </div>
+                                            <div class="col-span-2 pl-2">
+                                                <p class="text-orange-400"><i class="fas fa-calendar-alt px-1"></i>DEC 16, 2020</p>
+                                                <h6 class="font-semibold hover:text-orange-400"><a href="/#">Gita Gopinath: The Government Must Ramp...</a></h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="grid grid-cols-3 mt-8">
+                                            <div class="">
+                                                <img src="https://checkbrand.online/uploads/topics/16076069491667.jpg" alt="" class="rounded-lg h-full">
+                                            </div>
+                                            <div class="col-span-2 pl-2">
+                                                <p class="text-orange-400"><i class="fas fa-calendar-alt px-1"></i>DEC 16, 2020</p>
+                                                <h6 class="font-semibold hover:text-orange-400"><a href="/#"> “Hosting Osama Bin Laden...’ Jaishankar...</a></h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="grid grid-cols-3 mt-8">
+                                            <div class="">
+                                                <img src="https://checkbrand.online/uploads/topics/16076069491667.jpg" alt="" class="rounded-lg h-full">
+                                            </div>
+                                            <div class="col-span-2 pl-2">
+                                                <p class="text-orange-400"><i class="fas fa-calendar-alt px-1"></i>DEC 16, 2020</p>
+                                                <h6 class="font-semibold hover:text-orange-400"><a href="/#">
+                                                    #MountEverest: 8848 Msl No More ?</a></h6>
+                                            </div>
+                                        </div>
+
+                                       
+                                    </div>
+                                    <div class="tab-pane fade show active pb-5" id="pills-most" role="tabpanel" aria-labelledby="pills-most-tab">
+                                        <div class="grid grid-cols-3 mt-8">
+                                            <div class="">
+                                                <img src="https://checkbrand.online/uploads/topics/16076069491667.jpg" alt="" class="rounded-lg h-full">
+                                            </div>
+                                            <div class="col-span-2 pl-2">
+                                                <p class="text-orange-400"><i class="fas fa-calendar-alt px-1"></i>DEC 16, 2020</p>
+                                                <h6 class="font-semibold hover:text-orange-400"><a href="/#">
+                                                    #MountEverest: 8848 Msl No More ?</a></h6>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="grid grid-cols-3 mt-8">
+                                            <div class="">
+                                                <img src="https://checkbrand.online/uploads/topics/16118992651520.jpeg" alt="" class="rounded-lg h-full">
+                                            </div>
+                                            <div class="col-span-2 pl-2">
+                                                <p class="text-orange-400"><i class="fas fa-calendar-alt px-1"></i>DEC 16, 2020</p>
+                                                <h6 class="font-semibold hover:text-orange-400"><a href="/#">Gita Gopinath: The Government Must Ramp...</a></h6>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="grid grid-cols-3 mt-8">
+                                            <div class="">
+                                                <img src="https://checkbrand.online/uploads/topics/16076069491667.jpg" alt="" class="rounded-lg h-full">
+                                            </div>
+                                            <div class="col-span-2 pl-2">
+                                                <p class="text-orange-400"><i class="fas fa-calendar-alt px-1"></i>DEC 16, 2020</p>
+                                                <h6 class="font-semibold hover:text-orange-400"><a href="/#"> “Hosting Osama Bin Laden...’ Jaishankar...</a></h6>
+                                            </div>
+                                        </div>
+                                        <div class="grid grid-cols-3 mt-8">
+                                            <div class="">
+                                                <img src="https://checkbrand.online/uploads/topics/16081250848815.jpg" alt="" class="rounded-lg h-full">
+                                            </div>
+                                            <div class="col-span-2 pl-2">
+                                                <p class="text-orange-400"><i class="fas fa-calendar-alt px-1"></i>DEC 16, 2020</p>
+                                                <h6 class="font-semibold hover:text-orange-400"><a href="/#">#Skillhaitohfuturehai: Mahindra's Flagsh...</a></h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-orange-400 font-semibold tracking-wider my-4 text-xl">HIGHLIGHTS</h3>
+                        <ul class="list-disc text-2xl text-gray-300 list-outside pl-4 space-y-2">
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">Realme Pad Specifications Teased, Will C...</a></li>
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">MARKETS: Sensex Down 300 Pts, At Days Lo...</a></li>
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">Afghanistan Crisis Live Updates: NIA Chi...</a></li>
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">Women Will Be Admitted To NDA, "Historic...</a></li>
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">Taliban's New Education Minister Says Ph...</a></li>
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">India's T20 World Cup Selection Question...</a></li>
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">New JioFiber Quarterly Broadband Plans I...</a></li>
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">Explained: How Your Cat Got Its Stripes...</a></li>
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">Who Is Aesha Mukherji? All You Need To K...</a></li>
+                            <li class="leading-[1.25rem]"><a href="/#" class="text-lg text-white hover:text-red-600 tracking-wide ">Long Live Test Cricket While We've Virat...</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-orange-400 font-semibold tracking-wider my-4 text-xl">POPULAR TAGS</h3>
+                        <div>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400 inline-block capitalize">Checkbrand</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">brand_value,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">sentiments,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400 inline-block capitalize">digital_ranking,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">brand_score,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">social_media_ranking,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">digital_marketing,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">sentiment_analysis,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">internet_marketing,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">media_monitoring,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">social_media_analysis,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">engagement,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">narendra_modi,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">delhi,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">bjp,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">india,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">news,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">twitter,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">prime_minister,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">politics,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">entertainment,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">cricket,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">rahul_gandhi,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">supreme_court,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">congress,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">donald_trump,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">twitter_trends,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">elon_musk,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">bollywood,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">us,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">trending,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">trending_news,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">aap,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">fifa,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">farmer_protest,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">productivity_index,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">china,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">covid_19,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">amit_shah,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">arvind_kejriwal,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">gujarat,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">karnataka,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">farmer_protests,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">world_cup,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">google_news,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">sports,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">nasa,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">joe_biden,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">elections,</a>
+                            <a href="/#" class="text-white text-[14px] mb-[1px] px-1 py-1 border border-gray-500 mr-2 hover:bg-orange-400  inline-block capitalize">latest_news</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+      <!-- Footer -->
+
+
+      <footer class="py-10 my-10 mx-5 bg-black rounded-xl">
+        <div class="first">
+          <div class="container mx-auto">
+            <div class="grid lg:grid-cols-3 py-10">
+              <div class="flex lg:justify-end ">
+                <img src="/images/logo.png" alt="" class="w-34" />
+              </div>
+              <div class="col-span-2 text-white px-4">
+                <p>
+                  CheckBrand is the only platform to track your digital ranking,
+                  digital presence, and social media presence along with detailed
+                  analytics reports by which you can measure all the parameters of
+                  a digital domain.
+                </p>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-4">
+              <div class="text-white flex">
+                <ul class="flex flex-col cursor-pointer font-semibold space-y-2">
+                  <li class="hover:underline">Home</li>
+                  <li class="hover:underline">TOP 100</li>
+                  <li class="hover:underline">Trends</li>
+                  <li class="hover:underline">Google Search</li>
+                  <li class="hover:underline">Top Wiki</li>
+                </ul>
+                <ul class="ml-6 flex flex-col cursor-pointer font-semibold space-y-2">
+                  <li class="hover:underline">Price</li>
+                  <li class="hover:underline">Register Your Brand</li>
+                  <li class="hover:underline">Top News</li>
+                  <li class="hover:underline">Top 500</li>
+                  <li class="hover:underline">Contact Us</li>
+                </ul>
+              </div>
+              <div class="text-white w-full px-2 py-6">
+                <h1 class="tracking-wider font-semibold py-3">SUBSCRIPTION</h1>
+                <form action="">
+                  <div class="flex flex-row">
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      class="w-full py-2 px-2 rounded-full w-full"
+                      />
+                    <span>
+                      <button class="bg-orange-500 py-2 px-2 rounded-full -ml-10">
+                        Subscribe
+                      </button></span>
+                  </div>
+                </form>
+              </div>
+              <div class="w-14 m-5">
+                <h2 class="text-white font-semibold pb-2">LIKE</h2>
+                <div>
+                  <div class="text-xs text-black bg-white p-0\.5 text-center">
+                    17k
+                  </div>
+                  <div class="text-xs text-white bg-blue-500 rounded-sm p-0\.5">
+                    <button
+                      type="button"
+                      class="inline-block font-medium text-xs leading-tight
+                      capitalize transition duration-150 ease-in-out">
+                      <i class="fa-solid fa-thumbs-up pl-1"></i> Follow
+                    </button>
+                  </div>
+                  <div
+                    class="text-xs text-white bg-blue-500 p-0\.5 my-2 rounded-sm
+                    text-center">
+                    <button
+                      type="button"
+                      class="inline-block font-medium text-xs leading-tight
+                      capitalize transition duration-150 ease-in-out">
+                      Share
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2 class="text-white text-lg tracking-wider py-3">FOLLOW US</h2>
+                <ul class="flex lg:flex-row  space-x-2 text-lg">
+                  <li class="text-black bg-white rounded-full px-3 py-1">
+                    <i class="fa fa-facebook-f"></i>
+                  </li>
+                  <li class="text-black bg-white rounded-full px-2 py-1">
+                    <i class="fa-brands fa-twitter"></i>
+                  </li>
+                  <li class="text-black bg-white rounded-full px-2 py-1">
+                    <i class="fa-brands fa-instagram"></i>
+                  </li>
+                  <li class="text-black bg-white rounded-full px-2 py-1">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </li>
+                  <li class="text-black bg-white rounded-full px-2 py-1">
+                    <i class="fa-brands fa-youtube"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-gray-700 border-t" />
+        </div>
+  
+        <div class="middle text-white text-center text-sm">
+          <div class="container mx-auto tracking-wider leading-7">
+            <a href="/#" class="px-2 border-gray-700 border-r">Product Launch</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Share of Voice</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Media Monitoring</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">AI-Based Sentiment Analysis</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Social Listening</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">ORM</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Market Research</a>
+            <br>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Monitor the Market and Trends</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Gather Audience Insights</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Analytics</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Social Media Reports</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Media Monitoring</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Digital Survey</a>
+            <br>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Digital Research</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Alerting</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Competitive Intelligence</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Trend Analysis</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Sales Intelligence</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Market Intelligence</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Brand Management</a>
+            <br>
+            <a href="/#" class="border-gray-700 border-r pr-2">Branding Campaign</a>
+            <a href="/#" class="border-gray-700 border-r pr-2">PR Reporting</a>
+            <a href="/#" class="border-gray-700 border-r pr-2">Campaign Management</a>
+            <a href="/#" class="border-gray-700 border-r pr-2">In Media</a>
+  
+  
+            
+            
+            
+            
+          </div>
+          <hr class="mt-6 border-gray-700 border-t" />
+  
+        </div>
+  
+        <div class="bottom">
+          <div class="container mx-auto my-2">
+            <div class="grid lg:grid-cols-2">
+              <div class="text-white text-xs space-x-2 items-center flex flex-wrap"> 
+                CheckBrand © 2020
+                <a href="/#" class="pl-2">About</a>
+                <a href="/#">Privacy Policy</a>
+                <a href="/#">Cookie Policy</a>
+                <a href="/#">Terms of Use</a>
+                <a href="/#">Disclaimer</a>
+                <a href="/#">F.A.Q.</a>
+                <a href="/#">BLOGS</a>
+  
+  
+              </div>
+              <div class="text-white text-xs flex justify-between items-center">
+                <img src="/images/logo_footer.png" class="w-28 hidden lg:block" alt="">
+                <span>Powered by <a href="/#">ADG Online Solutions </a></span>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </footer>
+  
+
+      <script>
+        
+
+
+var splide = new Splide( '.splide', {
+  type   : 'loop',
+  perPage: 3,
+  perMove: 1,
+  gap: "1rem",
+} );
+
+splide.mount();
+      </script>
+</body>
+</html>

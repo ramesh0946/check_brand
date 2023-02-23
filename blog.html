@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+        <!-- tailwind cdn -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+            />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+        <!-- Font Awesome link-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/yourcode.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <!-- Tailwind configuration -->
+        <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          padding: {
+            DEFAULT: "1rem",
+            sm: "2rem",
+            lg: "4rem",
+            xl: "9rem",
+            "2xl": "7rem",
+          },
+        },
+        extend: {},
+      },
+    };
+  </script>
+</head>
+<body class="bg-gray-800">
+     <!-- Navbar -->
+
+     <nav class="bg-gray-800">
+        <div class="px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-20 items-center justify-between">
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch
+              sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img
+                  class="hidden h-14 w-auto lg:block"
+                  src="images/logo.png"
+                  alt="Your Company"
+                  />
+                <div class="sm:ml-6 sm:block">
+                  <div class="flex items-center space-x-4">
+                    <a href="#" aria-current="page"><button
+                        class="bg-orange-500 py-2 px-4 text-white rounded-full
+                        hover:bg-white hover:text-black">
+                        Register Your Brand
+                      </button></a>
+                    <a href="#" aria-current="page"><button
+                        class="font-bold border border-white  py-2
+                        px-6 text-white rounded-full hover:bg-white
+                        hover:text-black mr-5">
+                        Live
+                      </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static
+              sm:inset-auto sm:ml-6 sm:pr-0 space-x-5">
+              <a href="#" aria-current="page"><button
+                  class="hidden md:block bg-orange-500 py-2 px-4 text-white
+                  rounded-full hover:bg-white hover:text-black">
+                  FREE DEMO
+                </button></a>
+                <a
+                href="#"
+                aria-current="page"
+                class="hidden md:block text-white rounded-full hover:bg-white
+                text-xl hover:text-black border-white border w-9 h-9 px-1.5 py-1"><i
+                  class="fa fa-sign-in"></i></a>
+                  <a
+                  href="#"
+                  aria-current="page"
+                  class="hidden md:block text-xl text-white rounded-full
+                  hover:bg-white hover:text-black border-white border w-9 h-9 px-1.5 py-1"><i
+                    class="fa fa-search"></i></a>
+              <a
+                href="#"
+                aria-current="page"
+                class="text-white text-2xl rounded-full hover:bg-orange-500
+                hover:text-black py-1 px-2 pr-3"><i class="fa fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+      <!-- Hero section -->
+  
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide relative"
+        data-bs-ride="carousel">
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item active relative float-left w-full max-h-[592px]">
+            <img
+              src="/images/s1.jpg"
+              class="block w-full opacity-60 "
+              alt="Wild Landscape"
+              />
+            <div class="carousel-caption absolute text-center mx-[14%]">
+              <h1
+                class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
+                More engaging content, more engaged followers
+              </h1>
+              <p class="font-light my-3 text-lg tracking-wide">
+                Something helpful, inspiring, or entertaining. Engaging content
+                gives your reader a peek at something he/she hasn't seen before
+                but can relate to in some way
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item relative float-left w-full max-h-[592px]" >
+            <img
+              src="/images/s2.jpg"
+              class="block w-full opacity-60 "
+              alt="Camera"
+              />
+            <div class="carousel-caption absolute text-center mx-[14%]">
+              <h1
+                class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
+                Check Online Reputation
+              </h1>
+              <p class="font-light my-3 text-lg tracking-wide">
+                Manage your brand's negative information from search results.
+                Repair negative links. Manage your brand visibility with our
+                effective ORM services.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item relative float-left w-full max-h-[592px]">
+            <img
+              src="/images/s3.jpg"
+              class="block w-full opacity-60 "
+              alt="Exotic Fruits"
+              />
+            <div class="carousel-caption absolute text-center mx-[14%]">
+              <h1
+                class="lg:text-4xl font-bold tracking-wider md:text-3xl text-xl">
+                Check Your Digital Rank and Score
+              </h1>
+              <p class="font-light my-3 text-lg tracking-wide">
+                CheckBrand helps you to measure your Online Reputation, Brand
+                Index with others. We use Artificial Intelligence to measure your
+                brand impact
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- News -->
+      <div class="news my-10">
+        <div class="container mx-auto">
+            <div class="text-white flex items-center">
+                <h3 class="text-xl font-bold tracking-wide">News</h3>
+                <hr class="grow mx-6 border-gray-500">
+                <div class="py-1 px-4 border border-gray-500 rounded-full "><a href="news.html" >View All</a></div>
+            </div>
+
+            <div class="my-10">
+                <div class="grid md:grid-cols-5 gap-x-6">
+                    <div class="md:col-span-2 relative overflow-hidden border-0 rounded-xl">
+                        <img src="https://checkbrand.online/uploads/topics/16749107533832.jpg" alt="" class="opacity-50  hover:scale-110 transition duration-300 zoom-in hover:-rotate-2 ">
+                        <div class="absolute bottom-3 ml-6 w-[60%] ">
+                            <h3 class="text-white hover:text-orange-600 tracking-wide text-lg leading-6">
+                                <a href="/#">
+                                Air Force Fighter Planes Crashed In Madhya Pradesh, 1 Pilot Dead, and Digital Audience Stunned With 99.2% Negative Sentiments</a></h3>
+                                <p class="text-white pt-1"><i class="fa-solid fa-clock "></i> 2 minutes 30 seconds</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-3">
+                        <div class="grid md:grid-cols-2  h-full">
+                            <div class="grid md:grid-rows-3 gap-6">
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16739603935063.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#"> "Pegasus, Rafale, ED, Central Vista…” Nirmala...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 2 minutes 30 seconds</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16736041276259.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">
+                                            Prime Minister Modi will inaugurate the "World's...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 3 minutes 29 seconds</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="	https://checkbrand.online/uploads/topics/16726561069620.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">
+                                            Demonetisation: ‘Not relevant whether objectives...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 3 minutes 26 seconds</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-rows-3 gap-6">
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16738646776472.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#"> PM's Roadshow in Delhi today, Ahead of the Mega-...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 3 minutes 8 seconds</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16730825192488.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">
+                                            Air India Covered Up For Two On Board Disgusting...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 3 minutes 29 seconds</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="	https://checkbrand.online/uploads/topics/16723112419767.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">
+                                            India Vs Sri Lanka, T20 & One-Day Internationals List...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 3 minutes 10 seconds</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+      <!-- Google news -->
+            <div class="text-white flex items-center">
+                <h3 class="text-xl font-bold tracking-wide ">Google News</h3>
+                <hr class=" mx-6 border-gray-500 grow">
+                <div class="py-1 px-4 border border-gray-500 rounded-full"><a href="news.html" >View All</a></div>
+            </div>
+
+            <div class="my-10">
+                <div class="grid grid-cols-5 gap-x-6">
+                    <div class="col-span-2 relative overflow-hidden border-0 rounded-xl">
+                        <img src="https://checkbrand.online/uploads/topics/16748970563868.jpg" alt="" class="opacity-50  hover:scale-110 transition duration-300 zoom-in hover:-rotate-2 ">
+                        <div class="absolute bottom-3 ml-6 w-[60%] ">
+                            <h3 class="text-white hover:text-orange-600 tracking-wide text-lg leading-6">
+                                <a href="/#">
+                                    Top French Institution Prohibited Students from Using the AI Tool ‘Chatbot’, the tool received 30.7% Positive Sentiments: CheckBrand </a></h3>
+                                <p class="text-white pt-1"><i class="fa-solid fa-clock "></i> 2 minutes 59 seconds</p>
+                        </div>
+                    </div>
+                    <div class="col-span-3">
+                        <div class="grid grid-cols-2  h-full">
+                            <div class="grid grid-rows-3 gap-6">
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16748240383132.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">Rishi Sunak, UK Prime Minister Never Paid His Tax...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 2 minutes 50 seconds</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16709378847493.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">
+                                            India Claims Casualties on Both Sides during a Border...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 3 minutes 11 seconds</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16632384728185.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">
+                                            Lakhimpur Kheri Comes In News Again, Attains 58.3K...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 2 minutes 21 seconds</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-rows-3 gap-6">
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16748160857134.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">LG Is In Deliberations with Tesla For Supplying...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 1 minutes 9 seconds</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16635715402809.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">
+                                            Chandigarh’s Ghastly Incident Fumes Anger in...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 2 minutes 43 seconds</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-3 w-full">
+                                    <div>
+                                        <img src="https://checkbrand.online/uploads/topics/16630561806114.jpg" alt="" class="h-full rounded-lg">
+                                    </div>
+                                    <div class="col-span-2 pl-3">
+                                        <p class="text-orange-400 tracking-wide "><a href="/#">‘Gyanvapi’ Mosque Plea Rejection Against...</a></p>
+                                        <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 1 minutes 52 seconds</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+      <!-- Best Campaign -->
+
+      <div class="text-white flex items-center">
+        <h3 class="text-xl font-bold tracking-wide ">Best Campaigns</h3>
+        <hr class=" mx-6 border-gray-500 grow">
+        <div class="py-1 px-4 border border-gray-500 rounded-full"><a href="news.html" >View All</a></div>
+    </div>
+
+    <div class="my-10">
+        <div class="grid grid-cols-5 gap-x-6">
+            <div class="col-span-2 relative overflow-hidden border-0 rounded-xl">
+                <img src="https://checkbrand.online/uploads/topics/16639411776203.jpg" alt="" class="opacity-50  hover:scale-110 transition duration-300 zoom-in hover:-rotate-2 ">
+                <div class="absolute bottom-3 ml-6 w-[60%] ">
+                    <h3 class="text-white hover:text-orange-600 tracking-wide text-lg leading-6">
+                        <a href="/#">
+                            The National Cinema Day Dragged Audience to Cinema Halls with Tickets @ ₹75 /-, Viewers Created Buzz in Social Media with 60.9% Positive Sentiments </a></h3>
+                        <p class="text-white pt-1"><i class="fa-solid fa-clock "></i> 8 minutes 46 seconds</p>
+                </div>
+            </div>
+            <div class="col-span-3">
+                <div class="grid grid-cols-2  h-full">
+                    <div class="grid grid-rows-3 gap-6">
+                        <div class="grid grid-cols-3 w-full">
+                            <div>
+                                <img src="https://checkbrand.online/uploads/topics/16603083371341.jpg" alt="" class="h-full rounded-lg">
+                            </div>
+                            <div class="col-span-2 pl-3">
+                                <p class="text-orange-400 tracking-wide "><a href="/#">‘Azadi ka Amrit Mahotsav’: A Concise Journey of India for...</a></p>
+                                <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 7 minutes 30 seconds</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 w-full">
+                            <div>
+                                <img src="https://checkbrand.online/uploads/topics/16600314486779.jpg" alt="" class="h-full rounded-lg">
+                            </div>
+                            <div class="col-span-2 pl-3">
+                                <p class="text-orange-400 tracking-wide "><a href="/#">
+                                    ‘Azadi ka Amrit Mahotsav’: Organic Food Festival in...</a></p>
+                                <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 2 minutes 23 seconds</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 w-full">
+                            <div>
+                                <img src="https://checkbrand.online/uploads/topics/16113986735312.jpg" alt="" class="h-full rounded-lg">
+                            </div>
+                            <div class="col-span-2 pl-3">
+                                <p class="text-orange-400 tracking-wide "><a href="/#">
+                                    PM Modi To Be Inoculated In The Second Vaccine Drive...</a></p>
+                                <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 2 minutes 19 seconds</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-rows-3 gap-6">
+                        <div class="grid grid-cols-3 w-full">
+                            <div>
+                                <img src="https://checkbrand.online/uploads/topics/16601265177136.jpg" alt="" class="h-full rounded-lg">
+                            </div>
+                            <div class="col-span-2 pl-3">
+                                <p class="text-orange-400 tracking-wide "><a href="/#">‘Azadi Ka Amrit Mahotsav’: 5.50 lakh tricolor flags will...</a></p>
+                                <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 2 minutes 47 seconds</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 w-full">
+                            <div>
+                                <img src="https://checkbrand.online/uploads/topics/16596119825171.jpg" alt="" class="h-full rounded-lg">
+                            </div>
+                            <div class="col-span-2 pl-3">
+                                <p class="text-orange-400 tracking-wide "><a href="/#">
+                                    'Har Ghar Tiranga' campaign created storm on social...</a></p>
+                                <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 3 minutes 42 seconds</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 w-full">
+                            <div>
+                                <img src="https://checkbrand.online/uploads/topics/16113894819854.jpg" alt="" class="h-full rounded-lg">
+                            </div>
+                            <div class="col-span-2 pl-3">
+                                <p class="text-orange-400 tracking-wide "><a href="/#">COVID 19: The Battle is far from over...</a></p>
+                                <p class="text-gray-500"><i class="fa-solid fa-clock "></i> 4 minutes 49 seconds</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+            
+        </div>
+
+      </div>
+
+
+       <!-- Footer -->
+
+
+    <footer class="py-10 my-10 mx-5 bg-black rounded-xl">
+        <div class="first">
+          <div class="container mx-auto">
+            <div class="grid lg:grid-cols-3 py-10">
+              <div class="flex lg:justify-end ">
+                <img src="/images/logo.png" alt="" class="w-34" />
+              </div>
+              <div class="col-span-2 text-white px-4">
+                <p>
+                  CheckBrand is the only platform to track your digital ranking,
+                  digital presence, and social media presence along with detailed
+                  analytics reports by which you can measure all the parameters of
+                  a digital domain.
+                </p>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-4">
+              <div class="text-white flex">
+                <ul class="flex flex-col cursor-pointer font-semibold space-y-2">
+                  <li class="hover:underline">Home</li>
+                  <li class="hover:underline">TOP 100</li>
+                  <li class="hover:underline">Trends</li>
+                  <li class="hover:underline">Google Search</li>
+                  <li class="hover:underline">Top Wiki</li>
+                </ul>
+                <ul class="ml-6 flex flex-col cursor-pointer font-semibold space-y-2">
+                  <li class="hover:underline">Price</li>
+                  <li class="hover:underline">Register Your Brand</li>
+                  <li class="hover:underline">Top News</li>
+                  <li class="hover:underline">Top 500</li>
+                  <li class="hover:underline">Contact Us</li>
+                </ul>
+              </div>
+              <div class="text-white w-full px-2 py-6">
+                <h1 class="tracking-wider font-semibold py-3">SUBSCRIPTION</h1>
+                <form action="">
+                  <div class="flex flex-row">
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      class="w-full py-2 px-2 rounded-full "
+                      />
+                    <span>
+                      <button class="bg-orange-500 py-2 px-2 rounded-full -ml-10">
+                        Subscribe
+                      </button></span>
+                  </div>
+                </form>
+              </div>
+              <div class="w-14 m-5">
+                <h2 class="text-white font-semibold pb-2">LIKE</h2>
+                <div>
+                  <div class="text-xs text-black bg-white p-0\.5 text-center">
+                    17k
+                  </div>
+                  <div class="text-xs text-white bg-blue-500 rounded-sm p-0\.5">
+                    <button
+                      type="button"
+                      class="inline-block font-medium text-xs leading-tight
+                      capitalize transition duration-150 ease-in-out">
+                      <i class="fa-solid fa-thumbs-up pl-1"></i> Follow
+                    </button>
+                  </div>
+                  <div
+                    class="text-xs text-white bg-blue-500 p-0\.5 my-2 rounded-sm
+                    text-center">
+                    <button
+                      type="button"
+                      class="inline-block font-medium text-xs leading-tight
+                      capitalize transition duration-150 ease-in-out">
+                      Share
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2 class="text-white text-lg tracking-wider py-3">FOLLOW US</h2>
+                <ul class="flex lg:flex-row  space-x-2 text-lg">
+                  <li class="text-black bg-white rounded-full px-3 py-1">
+                    <i class="fa fa-facebook-f"></i>
+                  </li>
+                  <li class="text-black bg-white rounded-full px-2 py-1">
+                    <i class="fa-brands fa-twitter"></i>
+                  </li>
+                  <li class="text-black bg-white rounded-full px-2 py-1">
+                    <i class="fa-brands fa-instagram"></i>
+                  </li>
+                  <li class="text-black bg-white rounded-full px-2 py-1">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </li>
+                  <li class="text-black bg-white rounded-full px-2 py-1">
+                    <i class="fa-brands fa-youtube"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-gray-700 border-t" />
+        </div>
+  
+        <div class="middle text-white text-center text-sm">
+          <div class="container mx-auto tracking-wider leading-7">
+            <a href="/#" class="px-2 border-gray-700 border-r">Product Launch</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Share of Voice</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Media Monitoring</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">AI-Based Sentiment Analysis</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Social Listening</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">ORM</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Market Research</a>
+            <br>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Monitor the Market and Trends</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Gather Audience Insights</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Analytics</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Social Media Reports</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Media Monitoring</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Digital Survey</a>
+            <br>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Digital Research</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Alerting</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Competitive Intelligence</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Trend Analysis</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Sales Intelligence</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Market Intelligence</a>
+            <a href="/#" class="border-gray-700 border-r px-2 ">Brand Management</a>
+            <br>
+            <a href="/#" class="border-gray-700 border-r pr-2">Branding Campaign</a>
+            <a href="/#" class="border-gray-700 border-r pr-2">PR Reporting</a>
+            <a href="/#" class="border-gray-700 border-r pr-2">Campaign Management</a>
+            <a href="/#" class="border-gray-700 border-r pr-2">In Media</a>
+  
+  
+            
+            
+            
+            
+          </div>
+          <hr class="mt-6 border-gray-700 border-t" />
+  
+        </div>
+  
+        <div class="bottom">
+          <div class="container mx-auto my-2">
+            <div class="grid lg:grid-cols-2">
+              <div class="text-white text-xs space-x-2 items-center flex flex-wrap"> 
+                CheckBrand © 2020
+                <a href="/#" class="pl-2">About</a>
+                <a href="/#">Privacy Policy</a>
+                <a href="/#">Cookie Policy</a>
+                <a href="/#">Terms of Use</a>
+                <a href="/#">Disclaimer</a>
+                <a href="/#">F.A.Q.</a>
+                <a href="/#">BLOGS</a>
+  
+  
+              </div>
+              <div class="text-white text-xs flex justify-between items-center">
+                <img src="/images/logo_footer.png" class="w-28 hidden lg:block" alt="">
+                <span>Powered by <a href="/#">ADG Online Solutions </a></span>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </footer>
+</body>
+</html>

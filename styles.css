@@ -1,0 +1,44 @@
+
+#heading {
+  right: 32%;
+  left: 32%;
+  padding-bottom: 3.25rem;
+ 
+  
+
+}
+.nav-pills .nav-item .link.active, .nav-pills .show>.link {
+  background: rgb(249 115 22);}
+
+.nav .nav-item .link.active, .link .show>.link{
+  border-style: solid;
+}
+
+table.wiki-card thead tr th::after {
+  width: 1px;
+  background: #fdae6c;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  bottom: 5px;
+  content: '';
+}
+
+.wiki-card tr td:last-child::after {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #70737a;
+  right: 10px;
+  top: 50%;
+  margin-top: -20px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+  color: #323741;
+  font-weight: 600;
+  content: "\f054";
+  text-align: center;
+  line-height: 40px;
+}
+
