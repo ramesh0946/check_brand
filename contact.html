@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Tailwind Link -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"  />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+              padding: {
+                DEFAULT: "1rem",
+                sm: "2rem",
+                lg: "4rem",
+                xl: "9rem",
+                "2xl": "12rem",
+              },
+            },
+            extend: {},
+          },
+        };
+      </script>
+</head>
+<body class="bg-gray-800">
+    <!-- Navbar -->
+
+    <nav class="bg-gray-800">
+      <div class="px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-20 items-center justify-between">
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch
+            sm:justify-start">
+            <div class="flex flex-shrink-0 items-center">
+              <img
+                class="hidden w-72 lg:block"
+                src="images/logo.png"
+                alt="Your Company"
+                />
+              <div class="sm:ml-6 sm:block">
+                <div class="flex items-center space-x-4">
+                  <a href="#" aria-current="page"><button data-te-toggle="modal"
+                      data-te-target="#exampleModalLg"
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
+                      class="bg-orange-500 py-1.5 px-6 text-white rounded-full
+                      hover:bg-white hover:text-black text-lg tracking-wide">
+                      Register Your Brand
+                    </button></a>
+                  <a href="live.html" aria-current="page"><button
+                      class="font-bold border border-gray-500 rounded-full py-2
+                      pr-12 pl-5 text-white rounded-full hover:bg-white
+                      hover:text-red-500 mr-5 text-left">
+                      Live
+                    </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static
+            sm:inset-auto sm:ml-6 sm:pr-0 space-x-5">
+            <a href="#" aria-current="page"><button
+                class="hidden md:block bg-orange-500 py-1.5 px-5 text-white
+                rounded-full hover:bg-white hover:text-black tracking-wide font-normal text-lg">
+                FREE DEMO
+              </button></a>
+              <a href="#" aria-current="page" class="border border-gray-500 h-10 hidden hover:bg-orange-500 md:block px-2.5 py-1.5 rounded-full text-lg text-white w-10"><i class="fa fa-sign-in"></i></a>
+              <a href="#" aria-current="page" class="bg-white border border-gray-500 h-10 hidden hover:bg-orange-500 hover:text-white md:block px-2.5 py-1 rounded-full text-xl w-10"><i class="fa fa-search"></i></a>
+                
+            <a
+              href="#"
+              aria-current="page"
+              class="text-white text-2xl rounded-full hover:bg-orange-500
+               py-1 px-2 pr-3"><i class="fa fa-bars"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar modal section -->
+    
+<!-- Modal -->
+<div
+  data-te-modal-init
+  class="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+  id="exampleModalLg"
+  tabindex="-1"
+  aria-labelledby="exampleModalLgLabel"
+  aria-modal="true"
+  role="dialog">
+  <div
+    data-te-modal-dialog-ref
+    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px]">
+    <div
+      class="pointer-events-auto relative flex w-full flex-col rounded-lg border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+      <div
+        class="flex flex-shrink-0 items-center justify-between rounded-lg border-b-2 border-neutral-100 border-opacity-100  dark:border-opacity-50">
+      <div class=" relative p-7 mx-3 pb-12">
+        <p class="text-gray-400 text-center px-12">To measure your Digital-Ranking | Digital Score | Share of Voice | Competition Analysis | Digital media monitoring</p>
+        <button class="text-white bg-gray-200 text-lg rounded-full h-8 w-8 absolute top-[5px] right-[-8px]" data-te-modal-dismiss aria-label="Close"><i class="fas fa-times"></i></button>
+        <div class="mt-8">
+          <form action="">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="space-y-6">
+                <input type="text" placeholder="Brand Name *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black">
+                <input type="text" placeholder="Email Address *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+              </div>
+              <div class="space-y-6">
+                <input type="text" placeholder="Phone *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+                <input type="text" placeholder="Password *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+              </div>
+            </div>
+            <div class="bg-transparent border-0 flex justify-between mb-1.5 mt-6 outline outline-2 outline-slate-200 px-3 py-2 rounded-full select-none text-gray-400 w-full" data-collapse-toggle="grids" aria-expanded="false" id="plus_id"><p>Add Social Links </p><span class="text-black font-bold text-xl" id="plus-sign">+</span>
+            </div>
+            <div class="hidden " id="grids">
+              <div class="grid grid-cols-2 gap-x-6 mt-6" >
+                <div class="space-y-6">
+                  <input type="text" placeholder="Facebook Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+                  <input type="text" placeholder="Instagram Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  <input type="text" placeholder="Youtube Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  
+                </div>
+                <div class="space-y-6 mb-4">
+                  <input type="text" placeholder="Twitter Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  <input type="text" placeholder="Linkedin Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  <input type="text" placeholder="Website Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                  
+                </div>
+              </div>
+              <strong class="text-xs tracking-wider text-red-400 select-none  cursor-pointer " id="add_more" onclick="add()">Add More Links</strong>
+              <div class="mt-4 grid grid-cols-2 gap-6" id="new_input">
+              </div>
+            </div>
+            </div>
+
+          <div>
+            <strong class="text-xs tracking-wider text-red-400 select-none cursor-pointer" data-collapse-toggle="search" aria-expanded="false">Choose Type of Search</strong>
+            <div class="p-5 rounded-2xl border-2 border-gray-200 mt-1.5 hidden" id="search">
+              <div>
+                <div class="form-check flex mb-1.5">
+                  <input type="radio" id="radio6" name="radio" class="form-check-input">
+                  <label for="radio6" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400">
+                    <i class="fa-solid fa-bolt-lightning text-xs pr-1.5"></i>Keyword Search</strong> <span class="text-gray-400 text-[16px]">Monitor the Web and Social Media for a precise topic using logical expressions and search operators. Perform a market research in a minute!</span>
+                    </label>
+                </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio" id="radio1" name="radio" class="form-check-input">
+                <label for="radio1" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400">
+                    <i class="fa-solid fa-tag text-sm pr-1.5"></i>Brand Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a brand - yours as well as your competitor's.</span>
+                  </label>
+              </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio"  id="radio2" name="radio" class="form-check-input">
+                <label for="radio2" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-solid fa-user-tie text-sm pr-1.5"></i>Personal Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a person - designed for elections monitoring and constant personal PR.</span></label>
+              </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio"  id="radio3" name="radio" class="form-check-input">
+                <label for="radio3" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-solid fa-location-dot text-sm pr-1.5"></i>Local Business Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a person - designed for elections monitoring and constant personal PR.</span></label>
+              </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio"  id="radio4" name="radio" class="form-check-input">
+                <label for="radio4" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-brands fa-twitter text-sm pr-1.5"></i>Twitter Account Metrics</strong> <span class="text-gray-400 text-[16px]">Follow the messages from and to given twitter account. Explore the number of followers and other influence metrics. Useful for campaign measurement.</span></label>
+              </div>
+              <div class="form-check flex mb-1.5">
+                <input type="radio"  id="radio5" name="radio" class="form-check-input">
+                <label for="radio5" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fab fa-facebook-square text-sm pr-1.5"></i>Facebook Page Monitoring</strong> <span class="text-gray-400 text-[16px]">Follow the message from and to facebook pages. Explore the number of likes, comments and other influence metrics. Useful for campaign measurement.</span></label>
+              </div>
+            </div>
+            </div>
+          </div>
+
+            <div class="my-6">
+              <label for="" class="text-gray-400">Select User Type *</label>
+              <select name="" id="" class="px-3 py-3 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  text-sm mt-2">
+                <option value="" class="text-gray-600 text-sm">-- Select --</option>
+                <option value="" class="text-gray-600 text-sm">Politicians</option>
+                <option value="" class="text-gray-600 text-sm">Actors</option>
+                <option value=" " class="text-gray-600 text-sm">CEO</option>
+                <option value="" class="text-gray-600 text-sm">Company</option>
+                <option value="" class="text-gray-600 text-sm">Influencers</option>
+                <option value="" class="text-gray-600 text-sm">Cricketers</option>
+                <option value="" class="text-gray-600 text-sm">Ministries</option>
+                <option value="" class="text-gray-600 text-sm">Others</option>
+                    
+              </select>
+
+            </div>
+
+            <div class="mt-8">
+              <div class="text-gray-400 mb-3">
+                <input type="checkbox" name="" id="" class="text-sm rounded text-xs focus:ring-0 focus:border"><label for="" class="pl-2.5 text-sm tracking-wider font-medium">I accept <a href="/#" class="text-blue-500">terms and conditions</a></label>
+              </div>
+              <div class="text-gray-400">
+                <input type="checkbox" name="" id="" class="text-sm rounded text-xs focus:ring-0 focus:border"><label for="" class="pl-2.5 text-sm tracking-wider font-medium">I want to receive news via email</label>
+              </div>
+
+            </div>
+            <button type="submit" class="text-white tracking-wide uppercase py-3 rounded-full bg-orange-500 w-full mt-1 ">REGISTER BRAND</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Form -->
+<div class="container mx-auto">
+    <div class="bg-gray-700 rounded-3xl mt-10">
+        <div class="p-12 grid md:grid-cols-3 gap-8">
+            <div class="col-span-2">
+                <h2 class="text-white text-3xl uppercase  font-bold">WRITE TO US</h2>
+                <h5 class="text-wider text-white">Kindly Fill-Up the form. We will communicate with you.</h5>
+                <form action="" class="mt-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <input type="text" placeholder="First Name" class="text-white bg-transparent rounded-full text-sm py-2.5 pl-4 outline outline-1 outline-gray-500 w-full mb-6">
+                        <input type="text" placeholder="Last Name" class="text-white bg-transparent rounded-full text-sm py-2.5 pl-4 outline outline-1 outline-gray-500 w-full mb-6">
+                        <input type="text" placeholder="Email Address" class="text-white bg-transparent rounded-full text-sm py-2.5 pl-4 outline outline-1 outline-gray-500 w-full mb-6">
+                        <input type="text" placeholder="Phone" class="text-white bg-transparent rounded-full text-sm py-2.5 pl-4 outline outline-1 outline-gray-500 w-full mb-6">
+
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="6" placeholder="Your Message" class="text-white bg-transparent rounded-lg text-sm py-2.5 px-4 outline outline-1 outline-gray-500 w-full mb-6"></textarea>
+                        <button type="submit" class="text-black bg-white rounded-full w-full text-center py-2.5 hover:bg-orange-500 hover:text-white">Submit Message</button>
+                    </div>
+
+                </div>
+            </form>
+            </div>
+            <div class="bg-gray-800 rounded-2xl px-4 pt-8 space-y-6">
+                <p class="text-white"><i class="fa-solid fa-location-dot text-white bg-orange-500 w-7 h-7 pt-1 text-center rounded-full text-sm mr-2"></i>B-1, Nearest Metro Station Sarita Vihar, Exit from Gate No:1 New Delhi-110044</p>
+                <p class="text-white"><i class="fa-solid fa-phone-flip text-white bg-orange-500 w-7 h-7 pt-1 text-center rounded-full text-sm mr-2"></i>+91 92891 34393</p>
+                <p class="text-white"><i class="fa-solid fa-envelope-open-text text-white bg-orange-500 w-7 h-7 pt-1 text-center rounded-full text-sm mr-2"></i> info@checkbrand.online</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="my-10 grid md:grid-cols-3 gap-6">
+        <div class="flex items-center bg-gray-700 rounded-xl p-3.5">
+            <i class="fa-sharp fa-solid fa-comments text-white w-12 h-12 text-2xl rounded-xl bg-green-600 text-center pt-1.5 mr-2"></i>
+            <h3 class="text-white text-lg font-bold leading-5">Chat With <br> Us Now</h3>
+        </div>
+        <div class="flex items-center bg-gray-700 rounded-xl p-3.5">
+            <i class="fa-solid fa-phone-flip text-white w-12 h-12 text-2xl rounded-xl bg-orange-400 text-center pt-1.5 mr-2"></i>
+            <h3 class="text-white text-lg font-bold leading-5">Schedule <br>A Demo</h3>
+        </div>
+        <div class="flex items-center bg-gray-700 rounded-xl p-3.5">
+            <i class="fa-brands fa-whatsapp text-white w-12 h-12 text-2xl rounded-xl bg-green-500 text-center pt-1.5 mr-2"></i>
+            <h3 class="text-white text-lg font-bold leading-5">Want To Talk<br>On WhatsApp?</h3>
+        </div>
+        
+
+
+    </div>
+
+</div>
+
+ <!-- Footer -->
+ <footer class="py-10 my-10 mx-5 bg-black rounded-xl">
+    <div class="first">
+      <div class="container mx-auto">
+        <div class="grid lg:grid-cols-3 py-10">
+          <div class="flex lg:justify-end ">
+            <img src="/images/logo.png" alt="" class="w-34" />
+          </div>
+          <div class="col-span-2 text-white px-4">
+            <p>
+              CheckBrand is the only platform to track your digital ranking,
+              digital presence, and social media presence along with detailed
+              analytics reports by which you can measure all the parameters of
+              a digital domain.
+            </p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-4">
+          <div class="text-white flex">
+            <ul class="flex flex-col cursor-pointer font-semibold space-y-2">
+              <li class="hover:underline">Home</li>
+              <li class="hover:underline">TOP 100</li>
+              <li class="hover:underline">Trends</li>
+              <li class="hover:underline">Google Search</li>
+              <li class="hover:underline">Top Wiki</li>
+            </ul>
+            <ul class="ml-6 flex flex-col cursor-pointer font-semibold space-y-2">
+              <li class="hover:underline">Price</li>
+              <li class="hover:underline">Register Your Brand</li>
+              <li class="hover:underline">Top News</li>
+              <li class="hover:underline">Top 500</li>
+              <li class="hover:underline">Contact Us</li>
+            </ul>
+          </div>
+          <div class="text-white w-full px-2 py-6">
+            <h1 class="tracking-wider font-semibold py-3">SUBSCRIPTION</h1>
+            <form action="">
+              <div class="flex flex-row">
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="w-full py-2 px-2 rounded-full w-full"
+                  />
+                <span>
+                  <button class="bg-orange-500 py-2 px-2 rounded-full -ml-10">
+                    Subscribe
+                  </button></span>
+              </div>
+            </form>
+          </div>
+          <div class="w-14 m-5">
+            <h2 class="text-white font-semibold pb-2">LIKE</h2>
+            <div>
+              <div class="text-xs text-black bg-white p-0\.5 text-center">
+                17k
+              </div>
+              <div class="text-xs text-white bg-blue-500 rounded-sm p-0\.5">
+                <button
+                  type="button"
+                  class="inline-block font-medium text-xs leading-tight
+                  capitalize transition duration-150 ease-in-out">
+                  <i class="fa-solid fa-thumbs-up pl-1"></i> Follow
+                </button>
+              </div>
+              <div
+                class="text-xs text-white bg-blue-500 p-0\.5 my-2 rounded-sm
+                text-center">
+                <button
+                  type="button"
+                  class="inline-block font-medium text-xs leading-tight
+                  capitalize transition duration-150 ease-in-out">
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-white text-lg tracking-wider py-3">FOLLOW US</h2>
+            <ul class="flex lg:flex-row  space-x-2 text-lg">
+              <li class="text-black bg-white rounded-full px-3 py-1">
+                <i class="fa fa-facebook-f"></i>
+              </li>
+              <li class="text-black bg-white rounded-full px-2 py-1">
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li class="text-black bg-white rounded-full px-2 py-1">
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li class="text-black bg-white rounded-full px-2 py-1">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </li>
+              <li class="text-black bg-white rounded-full px-2 py-1">
+                <i class="fa-brands fa-youtube"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-700 border-t" />
+    </div>
+
+    <div class="middle text-white text-center text-sm">
+      <div class="container mx-auto tracking-wider leading-7">
+        <a href="/#" class="px-2 border-gray-700 border-r">Product Launch</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Share of Voice</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Media Monitoring</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">AI-Based Sentiment Analysis</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Social Listening</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">ORM</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Market Research</a>
+        <br>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Monitor the Market and Trends</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Gather Audience Insights</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Analytics</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Social Media Reports</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Media Monitoring</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Digital Survey</a>
+        <br>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Digital Research</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Real Time Alerting</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Competitive Intelligence</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Trend Analysis</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Sales Intelligence</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Market Intelligence</a>
+        <a href="/#" class="border-gray-700 border-r px-2 ">Brand Management</a>
+        <br>
+        <a href="/#" class="border-gray-700 border-r pr-2">Branding Campaign</a>
+        <a href="/#" class="border-gray-700 border-r pr-2">PR Reporting</a>
+        <a href="/#" class="border-gray-700 border-r pr-2">Campaign Management</a>
+        <a href="/#" class="border-gray-700 border-r pr-2">In Media</a>
+
+
+        
+        
+        
+        
+      </div>
+      <hr class="mt-6 border-gray-700 border-t" />
+
+    </div>
+
+    <div class="bottom">
+      <div class="container mx-auto my-2">
+        <div class="grid lg:grid-cols-2">
+          <div class="text-white text-xs space-x-2 items-center flex flex-wrap"> 
+            CheckBrand © 2020
+            <a href="/#" class="pl-2">About</a>
+            <a href="/#">Privacy Policy</a>
+            <a href="/#">Cookie Policy</a>
+            <a href="/#">Terms of Use</a>
+            <a href="/#">Disclaimer</a>
+            <a href="/#">F.A.Q.</a>
+            <a href="/#">BLOGS</a>
+
+
+          </div>
+          <div class="text-white text-xs flex justify-between items-center">
+            <img src="/images/logo_footer.png" class="w-28 hidden lg:block" alt="">
+            <span>Powered by <a href="/#">ADG Online Solutions </a></span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+  
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>

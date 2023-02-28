@@ -1,4 +1,5 @@
 
+
 #heading {
   right: 32%;
   left: 32%;
@@ -42,3 +43,7 @@ table.wiki-card thead tr th::after {
   line-height: 40px;
 }
 
+ .new{
+  background-color: white;
+  color: black;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- Tailwind Link -->
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"  />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,11 +12,17 @@
     <!-- Font Awesome link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <!-- slider -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
 
+    <style>
+      /* .active{
+        background: white;
+      } */
+    </style>
 
   <!-- flowbite popover link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
@@ -77,13 +83,19 @@
           <div
             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static
             sm:inset-auto sm:ml-6 sm:pr-0 space-x-5">
-            <a href="#" aria-current="page"><button
+            <a href="contact.html" aria-current="page"><button
                 class="hidden md:block bg-orange-500 py-1.5 px-5 text-white
                 rounded-full hover:bg-white hover:text-black tracking-wide font-normal text-lg">
                 FREE DEMO
               </button></a>
-              <a href="#" aria-current="page" class="border border-gray-500 h-10 hidden hover:bg-orange-500 md:block px-2.5 py-1.5 rounded-full text-lg text-white w-10"><i class="fa fa-sign-in"></i></a>
-              <a href="#" aria-current="page" class="bg-white border border-gray-500 h-10 hidden hover:bg-orange-500 hover:text-white md:block px-2.5 py-1 rounded-full text-xl w-10"><i class="fa fa-search"></i></a>
+              <a href="#" data-te-toggle="modal"
+              data-te-target="#login-modal"
+              data-te-ripple-init
+              data-te-ripple-color="light" aria-current="page" class="border border-gray-500 h-10 hidden hover:bg-orange-500 md:block px-2.5 py-1.5 rounded-full text-lg text-white w-10"><i class="fa fa-sign-in"></i></a>
+              <a href="#" aria-current="page" class="bg-white border border-gray-500 h-10 hidden hover:bg-orange-500 hover:text-white md:block px-2.5 py-1 rounded-full text-xl w-10" data-te-toggle="modal"
+              data-te-target="#exampleModalFullscreen"
+              data-te-ripple-init
+              data-te-ripple-color="light"><i class="fa fa-search"></i></a>
                 
             <a
               href="#"
@@ -99,7 +111,7 @@
     
 
 
-<!-- Modal -->
+<!-- Modal 1 -->
 <div
   data-te-modal-init
   class="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
@@ -107,7 +119,7 @@
   tabindex="-1"
   aria-labelledby="exampleModalLgLabel"
   aria-modal="true"
-  role="dialog">
+  role="dialog" >
   <div
     data-te-modal-dialog-ref
     class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px] min-[992px]:max-w-[800px]">
@@ -224,6 +236,249 @@
   </div>
 </div>
 
+<!-- Modal 2 -->
+
+<div
+  data-te-modal-init
+  class="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+  id="login-modal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLgLabel"
+  aria-modal="true"
+  role="dialog">
+  <div
+    data-te-modal-dialog-ref
+    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[452px]:mx-auto min-[452px]:mt-10 min-[452px]:max-w-[452px] ">
+    <div
+      class="pointer-events-auto relative flex w-full flex-col rounded-2xl border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+      <div
+        class=" rounded-2xl border-b-2 border-neutral-100 border-opacity-100  dark:border-opacity-50">
+      <div class=" relative p-7 mx-3 pb-6">
+        <button class="text-white bg-gray-200 text-lg rounded-full h-8 w-8 absolute top-[9px] right-[-4px]" data-te-modal-dismiss aria-label="Close"><i class="fas fa-times"></i></button>
+        <div class="px-5 py-3" id="login-set">
+          <form action="">
+            <h3 class="text-black text-2xl tracking-widest text-center mb-3">LOGIN</h3>
+            <input type="text" placeholder="Email" class="bg-transparent border-none focus:ring-2 focus:ring-gray-300 mb-6 outline outline-2 outline-gray-300 pl-4 py-2 rounded-full text-center text-xl w-full">
+            <input type="password" placeholder="Password" class="bg-transparent border-none focus:ring-2 focus:ring-gray-300 mb-6 outline outline-2 outline-gray-300 pl-4 py-2 rounded-full text-center text-xl w-full">
+            <div class="flex justify-between ">
+              <div>
+              <input type="checkbox" name="keep" id="" class=" rounded mr-2">
+              <label for="keep" class="text-gray-400">Keep me signed in</label>
+              </div>
+              <button class="text-orange-600 text-sm" id="forgot-btn">Forget Password?</button>
+            </div>
+            <button type="submit" class="bg-orange-500 text-white w-full rounded-full py-2 text-center my-5 hover:bg-gray-700">Login</button>
+            <div class="flex items-center justify-center space-x-2">
+              <hr class="border-slate-300 border w-32" />
+              <h6 class="text-slate-500">Or</h6>
+              <hr class="border-slate-300 border w-32" />
+            </div>
+            <div class="text-center my-5">
+              <h6 class="text-slate-500">Login With</h6>
+              <ul class="space-x-4 my-4">
+                <i class="outline outline-1 outline-gray-600 fa fa-facebook-f px-3 py-2 rounded-full hover:text-white hover:bg-orange-400 hover:outline-none"></i>
+                <i class="outline outline-1 outline-gray-600 fab fa-google px-2 py-2 rounded-full hover:text-white hover:bg-orange-400 hover:outline-none"></i>
+              </ul>
+            </div>
+
+          </form>
+          <div class="text-center">
+            <h6 class="text-slate-500">Don't Have An Account?</h6>
+            <button class="text-orange-600 text-base mt-3" id="register-btn">Register here</button>
+          </div>
+
+        </div>
+
+        <div class="px-5 py-3 signup hidden" id="register-set">
+          <form action="">
+            <h3 class="text-black text-2xl tracking-wide text-center mb-3">SIGN UP</h3>
+            <input type="text" placeholder="Name" class="bg-transparent border-none focus:ring-2 focus:ring-gray-300 mb-6 outline outline-2 outline-gray-300 pl-4 py-2 rounded-full text-center text-xl w-full">
+            <input type="text" placeholder="Email" class="bg-transparent border-none focus:ring-2 focus:ring-gray-300 mb-6 outline outline-2 outline-gray-300 pl-4 py-2 rounded-full text-center text-xl w-full">
+            <input type="Password" placeholder="Password" class="bg-transparent border-none focus:ring-2 focus:ring-gray-300 mb-6 outline outline-2 outline-gray-300 pl-4 py-2 rounded-full text-center text-xl w-full">
+            <input type="password" placeholder="Confirm Password" class="bg-transparent border-none focus:ring-2 focus:ring-gray-300 mb-6 outline outline-2 outline-gray-300 pl-4 py-2 rounded-full text-center text-xl w-full">
+            <h6 class="text-slate-500">By continuing, you agree to the <span class="text-blue-500">Terms of Use.</span></h6>
+            <button type="submit" class="bg-orange-500 text-white w-full rounded-full py-2 text-center my-5 hover:bg-gray-700">CREATE ACCOUNT</button>
+            <div class="flex items-center justify-center space-x-2">
+              <hr class="border-slate-300 border w-32" />
+              <h6 class="text-slate-500">Or</h6>
+              <hr class="border-slate-300 border w-32" />
+            </div>
+            <div class="text-center my-5">
+              <h6 class="text-slate-500">Login With</h6>
+              <ul class="space-x-4 my-4">
+                <i class="outline outline-1 outline-gray-600 fa fa-facebook-f px-3 py-2 rounded-full hover:text-white hover:bg-orange-400 hover:outline-none"></i>
+                <i class="outline outline-1 outline-gray-600 fab fa-google px-2 py-2 rounded-full hover:text-white hover:bg-orange-400 hover:outline-none"></i>
+              </ul>
+            </div>
+        
+          </form>
+          <div class="text-center">
+            <h6 class="text-slate-500">Have An Account?</h6>
+            <button class="text-[#ef2727] text-base mt-1 text-sm" id="login-btn">Log in</button>
+            <button class="text-white bg-orange-500 rounded-full py-2 px-5 mt-1 hover:bg-gray-700" data-te-target="#exampleModalLg" data-te-toggle="modal" data-te-dismiss="modal">Register As Brand</button>
+          </div>
+        
+        </div>
+
+        <div class="px-5 py-3 hidden" id="forget-set">
+          <form action="">
+            <h3 class="text-black text-2xl tracking-wide text-center mb-3">FORGOT PASSWORD</h3>
+            <input type="email" placeholder="Email" class="bg-transparent border-none focus:ring-2 focus:ring-gray-300 mb-5 outline outline-2 outline-gray-300 pl-4 py-2 rounded-full text-center text-xl w-full">
+            <button type="submit" class="bg-orange-500 text-white w-full rounded-full py-2 text-center my-5 hover:bg-gray-700">Submit</button>       
+          </form>
+          <div class="text-center">
+            <h6 class="text-slate-500">Don't Have An Account?</h6>
+            <button class="text-orange-600 text-base mt-3" id="">Register here</button>
+          </div>
+        </div>
+
+ 
+        <!-- <div class=" relative p-7 mx-3 pb-12 hidden" id="brand-set">
+          <p class="text-gray-400 text-center px-12">To measure your Digital-Ranking | Digital Score | Share of Voice | Competition Analysis | Digital media monitoring</p>
+          <div class="mt-8">
+            <form action="">
+              <div class="grid grid-cols-2 gap-6">
+                <div class="space-y-6">
+                  <input type="text" placeholder="Brand Name *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black">
+                  <input type="text" placeholder="Email Address *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+                </div>
+                <div class="space-y-6">
+                  <input type="text" placeholder="Phone *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+                  <input type="text" placeholder="Password *" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                </div>
+              </div>
+              <div class="bg-transparent border-0 flex justify-between mb-1.5 mt-6 outline outline-2 outline-slate-200 px-3 py-2 rounded-full select-none text-gray-400 w-full" data-collapse-toggle="grids" aria-expanded="false" id="plus_id"><p>Add Social Links </p><span class="text-black font-bold text-xl" id="plus-sign">+</span>
+              </div>
+              <div class="hidden " id="grids">
+                <div class="grid grid-cols-2 gap-x-6 mt-6" >
+                  <div class="space-y-6">
+                    <input type="text" placeholder="Facebook Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black ">
+                    <input type="text" placeholder="Instagram Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                    <input type="text" placeholder="Youtube Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                    
+                  </div>
+                  <div class="space-y-6 mb-4">
+                    <input type="text" placeholder="Twitter Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                    <input type="text" placeholder="Linkedin Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                    <input type="text" placeholder="Website Link" class="px-3 py-2 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  ">
+                    
+                  </div>
+                </div>
+                <strong class="text-xs tracking-wider text-red-400 select-none  cursor-pointer " id="add_more" onclick="add()">Add More Links</strong>
+                <div class="mt-4 grid grid-cols-2 gap-6" id="new_input">
+                </div>
+              </div>
+              </div>
+  
+            <div>
+              <strong class="text-xs tracking-wider text-red-400 select-none cursor-pointer" data-collapse-toggle="search" aria-expanded="false">Choose Type of Search</strong>
+              <div class="p-5 rounded-2xl border-2 border-gray-200 mt-1.5 hidden" id="search">
+                <div>
+                  <div class="form-check flex mb-1.5">
+                    <input type="radio" id="radio6" name="radio" class="form-check-input">
+                    <label for="radio6" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400">
+                      <i class="fa-solid fa-bolt-lightning text-xs pr-1.5"></i>Keyword Search</strong> <span class="text-gray-400 text-[16px]">Monitor the Web and Social Media for a precise topic using logical expressions and search operators. Perform a market research in a minute!</span>
+                      </label>
+                  </div>
+                <div class="form-check flex mb-1.5">
+                  <input type="radio" id="radio1" name="radio" class="form-check-input">
+                  <label for="radio1" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400">
+                      <i class="fa-solid fa-tag text-sm pr-1.5"></i>Brand Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a brand - yours as well as your competitor's.</span>
+                    </label>
+                </div>
+                <div class="form-check flex mb-1.5">
+                  <input type="radio"  id="radio2" name="radio" class="form-check-input">
+                  <label for="radio2" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-solid fa-user-tie text-sm pr-1.5"></i>Personal Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a person - designed for elections monitoring and constant personal PR.</span></label>
+                </div>
+                <div class="form-check flex mb-1.5">
+                  <input type="radio"  id="radio3" name="radio" class="form-check-input">
+                  <label for="radio3" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-solid fa-location-dot text-sm pr-1.5"></i>Local Business Reputation</strong> <span class="text-gray-400 text-[16px]">Monitor and explore the reputation of a person - designed for elections monitoring and constant personal PR.</span></label>
+                </div>
+                <div class="form-check flex mb-1.5">
+                  <input type="radio"  id="radio4" name="radio" class="form-check-input">
+                  <label for="radio4" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fa-brands fa-twitter text-sm pr-1.5"></i>Twitter Account Metrics</strong> <span class="text-gray-400 text-[16px]">Follow the messages from and to given twitter account. Explore the number of followers and other influence metrics. Useful for campaign measurement.</span></label>
+                </div>
+                <div class="form-check flex mb-1.5">
+                  <input type="radio"  id="radio5" name="radio" class="form-check-input">
+                  <label for="radio5" class="pl-2 -mt-1 form-check-label"><strong class="text-gray-400"><i class="fab fa-facebook-square text-sm pr-1.5"></i>Facebook Page Monitoring</strong> <span class="text-gray-400 text-[16px]">Follow the message from and to facebook pages. Explore the number of likes, comments and other influence metrics. Useful for campaign measurement.</span></label>
+                </div>
+              </div>
+              </div>
+            </div>
+  
+              <div class="my-6">
+                <label for="" class="text-gray-400">Select User Type *</label>
+                <select name="" id="" class="px-3 py-3 rounded-full bg-transparent outline border-0 w-full outline-2 outline-slate-200 text-black  text-sm mt-2">
+                  <option value="" class="text-gray-600 text-sm">-- Select --</option>
+                  <option value="" class="text-gray-600 text-sm">Politicians</option>
+                  <option value="" class="text-gray-600 text-sm">Actors</option>
+                  <option value=" " class="text-gray-600 text-sm">CEO</option>
+                  <option value="" class="text-gray-600 text-sm">Company</option>
+                  <option value="" class="text-gray-600 text-sm">Influencers</option>
+                  <option value="" class="text-gray-600 text-sm">Cricketers</option>
+                  <option value="" class="text-gray-600 text-sm">Ministries</option>
+                  <option value="" class="text-gray-600 text-sm">Others</option>
+                      
+                </select>
+  
+              </div>
+  
+              <div class="mt-8">
+                <div class="text-gray-400 mb-3">
+                  <input type="checkbox" name="" id="" class="text-sm rounded text-xs focus:ring-0 focus:border"><label for="" class="pl-2.5 text-sm tracking-wider font-medium">I accept <a href="/#" class="text-blue-500">terms and conditions</a></label>
+                </div>
+                <div class="text-gray-400">
+                  <input type="checkbox" name="" id="" class="text-sm rounded text-xs focus:ring-0 focus:border"><label for="" class="pl-2.5 text-sm tracking-wider font-medium">I want to receive news via email</label>
+                </div>
+  
+              </div>
+              <button type="submit" class="text-white tracking-wide uppercase py-3 rounded-full bg-orange-500 w-full mt-1 ">REGISTER BRAND</button>
+            </form>
+  
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+
+<div
+  data-te-modal-init
+  class="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+  id="exampleModalFullscreen"
+  tabindex="-1"
+  aria-labelledby="exampleModalFullscreenLabel"
+  aria-hidden="true">
+  <div
+    data-te-modal-dialog-ref
+    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+    <div
+      class="pointer-events-auto relative flex w-full flex-col rounded-md bg-black bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
+      <div class="relative p-4 ">
+        <button class="text-white bg-gray-200 text-lg rounded-full h-8 w-8 absolute top-[9px] right-[-4px]" data-te-modal-dismiss aria-label="Close"><i class="fas fa-times"></i></button>
+        <div class="flex flex-col items-center justify-center h-screen text-white">
+          <img src="https://checkbrand.online/frontend/images/Searchlogo.png" alt="">
+          <p class="text-white text-xl tracking-wide pt-2 pb-20">Check Your Digital Rank and Score</p>
+          <ul class="flex space-x-1 search-modal">
+            <li class=" uppercase text-sm font-normal py-3 px-4  rounded-t-lg select-none link cursor-pointer new:text-black" onclick="selectClass(this)">Politicians</li>
+            <li class=" uppercase text-sm font-normal py-3 px-4 active:text-black active:bg-white rounded-t-lg select-none cursor-pointer" onclick="selectClass(this)">Actors</li>
+            <li class=" uppercase text-sm font-normal py-3 px-4 active:text-black active:bg-white rounded-t-lg select-none cursor-pointer" onclick="selectClass(this)">CEO</li>
+            <li class=" uppercase text-sm font-normal py-3 px-4 active:text-black active:bg-white rounded-t-lg select-none cursor-pointer" onclick="selectClass(this)">Company</li>
+            <li  class=" uppercase text-sm font-normal py-3 px-4 active:text-black active:bg-white rounded-t-lg select-none cursor-pointer" onclick="selectClass(this)">Influencers</li>
+            <li class=" uppercase text-sm font-normal py-3 px-4 active:text-black active:bg-white rounded-t-lg select-none cursor-pointer" onclick="selectClass(this)">Cricketers</li>
+            <li class=" uppercase text-sm font-normal py-3 px-4 active:text-black active:bg-white rounded-t-lg select-none cursor-pointer" onclick="selectClass(this)">Ministries</li>
+          </ul>
+          <div class="">
+            <input type="text" placeholder="Search" class="py-6 px-4 rounded-b-xl text-xl text-white w-[704px]">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Hero section -->
 
@@ -2625,6 +2880,36 @@
         })
      
     </script>
+
+    <script>
+      $("#register-btn").on("click",function(){
+        $("#login-set").hide();
+        $("#register-set").show();
+      });
+      $("#login-btn").on("click",function(){
+        $("#register-set").hide();
+        $("#login-set").show();
+      });
+      $("#forgot-btn").on("click",function(e){
+        e.preventDefault();
+        $("#login-set").hide();
+        $("#forget-set").show();
+      });
+      $("#register1-btn").on("click",function(e){
+        e.preventDefault();
+        $("#forget-set").hide();
+        $("#register-set").show();
+      });
+      
+    </script>
+
+    <script>
+      function selectClass(a){
+        
+        a.classList.toggle("new");
+      }
+    </script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <!-- flowbit javacript link for toggle-->
